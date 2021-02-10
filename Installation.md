@@ -15,3 +15,7 @@ It is **strongly** recommended that you verify that the downloaded file is authe
 Windows 10 already has built-in _unzipper_, so just right click on downloaded file and choose `Extract All...`. You can extract files to any path you like.
 
 After that is done, you shall proceed to [running NiceHash QuickMiner for the first time](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-for-the-first-time).
+
+## 4. Optional: Remove previous version
+
+NiceHash QuickMiner has auto updater and will notify and install when there is new version so you do not have to manually install it again. But if for some reason, you are doing that, you have to uninstall previous version first. You can do that manually by removing all autostart tasks (remove autostart methods in QuickMiner) and removing all files or you can run `NiceHashQuickMiner.exe --uninstall --keepconfig` and everything will be done automatically for you.
