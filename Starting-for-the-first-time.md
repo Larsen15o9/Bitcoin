@@ -30,3 +30,11 @@ You can do following actions:
 * enable or disable CPU mining,
 * set NiceHash QuickMiner to start with Windows and
 * exit.
+
+### 5. Startup with Windows?
+
+If you would like NiceHash QuickMiner to startup with Windows, then you have to enable this option. There are two possibilities. You should **enable only one**. The recommended one is to start it with `Task scheduler method`. But if this method does not work for you somehow, try it by enabling `Service method`.
+
+### 6. Additional tips and tricks?
+
+I suggest going through the list of tips and tricks and properly configure NiceHash QuickMiner for your video card(s), to maximize your mining reliability and your mining profits.
