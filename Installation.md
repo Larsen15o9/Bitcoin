@@ -14,4 +14,4 @@ It is **strongly** recommended that you verify that the downloaded file is authe
 
 Windows 10 already has built-in _unzipper_, so just right click on downloaded file and choose `Extract All...`. You can extract files to any path you like.
 
-After that is done, you shall proceed to [running NiceHash QuickMiner for the first time](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-first-time).
+After that is done, you shall proceed to [running NiceHash QuickMiner for the first time](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-for-the-first-time).
