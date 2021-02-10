@@ -37,4 +37,4 @@ If you would like NiceHash QuickMiner to startup with Windows, then you have to 
 
 ### 6. Additional tips and tricks?
 
-I suggest going through the list of tips and tricks and properly configure NiceHash QuickMiner for your video card(s), to maximize your mining reliability and your mining profits.
+I suggest going through the [list of tips and tricks](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks) and properly configure NiceHash QuickMiner for your video card(s), to maximize your mining reliability and your mining profits.
