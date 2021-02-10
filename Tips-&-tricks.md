@@ -33,6 +33,16 @@ We suggest you to try to set action to number `2` (Restart Excavator). If that d
 
 When something does go wrong, it can be fixed in most cases, but enough information is needed. We suggest you to enable file logging when you have problems. You can do this by modifying nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`). Set `"fileLogLevel"` to `0` and also change `"launchCommandLine"` for Excavator to `"-wp 18000 -d 2 -f 0"` (note the last number changed to zero). This will enable both (NiceHash QuickMiner and Excavator full file logging). When submitting [issue here](https://github.com/nicehash/NiceHashQuickMiner/issues), it is strongly suggested to also provide these logs so the issue can be identified and resolved faster. Do not forget to **remove your personal information** from logs (such as your Mining Address) before you submit them.
 
+Log level number | Log what?
+-----------------|-----------
+0 | log everything (TRACE)
+1 | log debug (DEBUG)
+2 | standard (INFO)
+3 | warnings (WARNING)
+4 | errors (ERROR)
+5 | fatal (FATAL)
+6 | no logging (disabled)
+
 ### 5. Use OCTune to overclock your video cards to improve efficiency and mining income
 
 OCTune tips & tricks can be found [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune).
