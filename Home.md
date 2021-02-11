@@ -1,4 +1,4 @@
-This wiki contains all the information you need and you might need in the future when you start mining with NiceHash using **NiceHash QuickMiner**.************
+This wiki contains all the information you need and you might need in the future when you start mining with NiceHash using **NiceHash QuickMiner**.
 
 ## Very important!
 
