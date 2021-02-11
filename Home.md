@@ -1,4 +1,4 @@
-NiceHash QuickMiner contains all information you need and you might need in the future when you start mining with NiceHash.
+This wiki contains all the information you need and you might need in the future when you start mining with NiceHash.
 
 ## Very important!
 
