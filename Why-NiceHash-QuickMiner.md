@@ -13,14 +13,13 @@ Because all the code of Excavator plus wrapper (QuickMiner) is made by NiceHash,
 Now you know difference between NiceHash Miner and NiceHash QuickMiner. The choice at the end is yours. You need to ask yourself: **Do I want my PC to be fully secure when I install miner?** If the answer is YES, then you should install NiceHash QuickMiner. If you do not have any sensitive information on your PC or you do not care about that, you can go with NiceHash Miner.
 
 # Main features
-- It uses ONLY Excavator for GPU mining and XMRig for CPU mining. Excavator is in-house developed miner and is 100% free of any malware and XMRig is open source CPU miner. There are some more open source C# libraries used. Code running as NiceHash QuickMiner is either developed by NiceHash or used from public repositories which means it is 100% safe and you do not have to worry about exposing your PC's sensitive data or getting infected with malware. NiceHash QuickMiner will (in the future) NEVER use any closed source software, software of unknown or unverified origin. List of modules & libraries is at the end of this page.
-- No benchmarks, you start mining IMMEDIATELY.
-- No third party tools for GPU overclocking needed. NiceHash QuickMiner has its own powerful and quick tool for setting overclocks and fan speeds.
-- Determine best overclock easily and quickly as never before with OCTune.
-- Watchdog which takes care of restarting mining process if something fails.
-- Windows autostart methods.
-- Automatic updates.
-- No developer fees. There is only NiceHash 2% pool-side fee with PPS (pay-per-share) payout scheme.
+* It uses **ONLY** [Excavator for GPU mining](https://github.com/nicehash/excavator) and **XMRig** for CPU mining. Excavator is in-house developed miner and is 100% free of any malware and [XMRig is open source CPU miner](https://github.com/xmrig/xmrig). There are some more open source C# libraries used. Code running under NiceHash QuickMiner is either developed by NiceHash or used from public repositories which means it is 100% safe and you do not have to worry about exposing your PC's sensitive data or getting infected with malware. NiceHash QuickMiner will (in the future) NEVER use any closed source software, software of unknown or unverified origin.
+* No benchmarks, you start mining IMMEDIATELY.
+* No third party tools for GPU overclocking needed. NiceHash QuickMiner has its own powerful and quick tool for setting overclocks and fan speeds. Determine best overclock easily and quickly as never before.
+* Watchdog which takes care of restarting mining process if something fails.
+* Windows autostart methods.
+* Automatic updates.
+* No developer fees. There is only NiceHash 2% pool-side fee with PPS (pay-per-share) payout scheme.
 
 # Drawbacks. Why it is better to use NiceHash Miner or NiceHash OS?
 - NiceHash QuickMiner mines **only** daggerhashimoto (ethereum). There is no algorithm switching so there is no chance for extra above-ethereum payrate that may come occasionally. The amount being lost depends on your GPU Model, but currently, it may be only up to several percentage.
