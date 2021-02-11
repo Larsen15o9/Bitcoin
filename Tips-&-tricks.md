@@ -46,3 +46,11 @@ Log level number | Log what?
 ### 5. Use OCTune to overclock your video cards to improve efficiency and mining income
 
 OCTune tips & tricks can be found [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune).
+
+### 6. BIOS settings for larger rigs and rigs using PCIe risers
+
+When you are running cards over risers, this adds extra instability factor to your configuration. You need to make sure your risers (comm link between CPU and GPU) are max stable. To achieve this, you need to set PCI Generation to 1 in BIOS (or at least 2). Having higher Generation introduce more instability because communication between CPU and GPU is faster and there are more chances for something to go wrong. There is no speed penalty when running Gen1 - your cards will hash at the same speed.
+
+If one of your cards crashes during mining and you see device `ERROR` it most likely means riser instability. This is especially true, if it happens when your card is not overclocked. In this case replace riser, cable and set PCIE gen1 in BIOS.
+
+When running more than 4 video cards, you will also have to set `Above 4G decoding` to `Enabled` in your motherboard's BIOS.
