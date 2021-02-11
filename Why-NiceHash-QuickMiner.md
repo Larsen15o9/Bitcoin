@@ -22,6 +22,9 @@ Now you know difference between NiceHash Miner and NiceHash QuickMiner. The choi
 - Automatic updates.
 - No developer fees. There is only NiceHash 2% pool-side fee with PPS (pay-per-share) payout scheme.
 
+# Drawbacks. Why it is better to use NiceHash Miner or NiceHash OS?
+- NiceHash QuickMiner mines **only** daggerhashimoto (ethereum). There is no algorithm switching so there is no chance for extra above-ethereum payrate that may come occasionally. The amount being lost depends on your GPU Model, but currently, it may be only up to several percentage.
+
 # Extra libraries & modules used
 * C++ program Excavator entirely made by NiceHash: https://github.com/nicehash/excavator
 * C# .NET library log4net: https://logging.apache.org/log4net/index.html
