@@ -16,6 +16,8 @@ You have to fiddle with core clock, memory clock and power limit until you find 
 
 ### New OCTune (v0.3.0.4+) with alternative overclocking abilities
 
+_Note: This feature is currently available only in `RC` version of NiceHash QuickMiner which can be obtained [here](https://github.com/nicehash/NiceHashQuickMiner/releases/tag/v0.3.0.4_RC)._
+
 With version 0.3.0.4 alternative overclocking ability was added to NiceHash QuickMiner. With this method, you only need to provide two values to optimize your mining efficiency:
 * absolute max core clock of video card,
 * absolute memory clock of VRAM and
@@ -39,8 +41,8 @@ GPU Model | Absolute memory clock | Delta memory clock
 ----------|-----------------------|--------------------
 3060 Ti | 7900 | +1100
 3070 | 7900 | +1100
-3080 | 10300 | +800
-3090 | 10350 | +800
+3080 | 10300 | +850
+3090 | 10350 | +850
 
 If you are getting rejected shares of type `Share above target` then your memory clock is **not** stable and you have to reduce it. But generally, if you get one or two bad shares of such type per day, it is still okay.
 
@@ -48,7 +50,7 @@ Once you find max stable memory clock, start with high `Core clock limit` (like 
 
 ### If you want highest possible speed
 
-After each decrease of `Core clock limit`, check values **Min KT**, **Avg KT** and **UMed KT**. These values should go as low as possible. The lower they are, the better speed you have. Once you are happy with the achieved speed, you can save your OC configuration by pressing `Save current configuration` button at the top. Note that if you change your memory clock, you'd need to readjust `Core clock limit` but usually not for much (perhaps only +15 or -15).
+After each decrease of `Core clock limit`, check values `Min KT`, `Avg KT` and `UMed KT`. These values should go as low as possible. The lower they are, the better speed you have. Once you are happy with the achieved speed, you can save your OC configuration by pressing `Save current configuration` button at the top. Note that if you change your memory clock, you'd need to readjust `Core clock limit` but usually not for much (perhaps only +15 or -15).
 
 ### If you want highest possible efficiency (recommended)
 
@@ -57,4 +59,6 @@ Highest possible efficiency makes your video card use less electricity, produce 
 While testing few cards, we managed to achieve following numbers:
 GPU Model | Absolute memory clock | Core clock limit | Power consumption (W) | Speed (MH/s) | Efficiency (kH/J)
 ---|---|---|---|---|---
-3060 Ti | 1149 | 1350 | 120 | 60 | 500
+3060 Ti | 7950 | 1350 | 120 | 60 | 500
+3070 | 7950 | 1050 | 117 | 60 | 513
+3090 | 10401 | 1080 | 286 | 117 | 411
