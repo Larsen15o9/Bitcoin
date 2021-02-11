@@ -6,7 +6,7 @@ NiceHash QuickMiner only works on Windows 10 x64 (any edition) for NVIDIA Graphi
 
 * NiceHash Miner vs NiceHash QuickMiner, which one to use? Detailed explanation is [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Why-NiceHash-QuickMiner).
 * How to download and install NiceHash QuickMiner, you can find [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Installation).
-* Running NiceHash QuickMiner for the first time is explained [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-first-time).
+* Running NiceHash QuickMiner for the first time is explained [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-for-the-first-time).
 * Tips and tricks, how to optimize and maximize your earnings are [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks).
 * Information how to use OCTune is [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune).
 * Troubleshooting. You have a problem? You will find explanation and possible resolution [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Troubleshooting).
