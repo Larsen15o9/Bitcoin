@@ -54,3 +54,7 @@ When you are running cards over risers, this adds extra instability factor to yo
 If one of your cards crashes during mining and you see device `ERROR` it most likely means riser instability. This is especially true, if it happens when your card is not overclocked. In this case replace riser, cable and set PCIE gen1 in BIOS.
 
 When running more than 4 video cards, you will also have to set `Above 4G decoding` to `Enabled` in your motherboard's BIOS.
+
+### 7. Enable automatic updates of RC versions
+
+If you would like to receive RC updates as soon as they are available, then in config file `nhqm.conf` flip the switch `"bUpdateRCVersion"` to `true`. If you decide to participate in testing of early new versions, please, submit all found bugs [here](https://github.com/nicehash/NiceHashQuickMiner/issues). Thank you!
