@@ -1,4 +1,9 @@
-### Finding most efficient or the fastest combination of OC values for your card(s)
+## Index
+[1. Finding most efficient or the fastest combination of OC values for your card(s) - classic long path](#count01)<br>
+[2. Alternative overclocking explained](#count02)<br>
+[3. Autotune (experimental from v0.3.0.5) - very fast automatic OC tuning - 95% max efficiency guaranteed within 5 minutes!](#count03)<br>
+
+## <a name="count01"></a> 1. Finding most efficient or the fastest combination of OC values for your card(s)
 
 Use OCTune. Look for values `Min KT` and `Avg KT`. Your goal is to get these values as low as possible. What is the meaning of these values? KT = Kernel Time. It is execution time of code running on GPU in microseconds. Min = minimal time (in previous X runs) and Avg = average time. Min can sometimes drop down to half of usual - you should ignore these values.
 
@@ -14,9 +19,9 @@ Increase core clock +25 at a time until your `Min KT` and `Avg KT` stop improvin
 _4. Play with settings to achieve best KT values_
 You have to fiddle with core clock, memory clock and power limit until you find best KT values (lowest) and max stability (no shares above target - `HW err` stays at 0). Once you find best values, you will have the highest possible speed. You can save your OC configuration (click `Save current configuration`) so it will be applied next time Excavator is started.
 
-### New OCTune (v0.3.0.4+) with alternative overclocking abilities
+## <a name="count02"></a> 2. New OCTune (v0.3.0.4+) with alternative overclocking abilities
 
-_Note: This feature is currently available only in `RC` version of NiceHash QuickMiner which can be obtained [here](https://github.com/nicehash/NiceHashQuickMiner/releases/tag/v0.3.0.4_RC)._
+_Note: This feature is currently available only in `RC` version of NiceHash QuickMiner which can be obtained [here](https://github.com/nicehash/NiceHashQuickMiner/releases/tag/v0.3.0.5_RC)._
 
 With version 0.3.0.4 alternative overclocking ability was added to NiceHash QuickMiner. With this method, you only need to provide two values to optimize your mining efficiency:
 * absolute max core clock of video card,
@@ -62,3 +67,12 @@ GPU Model | Absolute memory clock | Core clock limit | Power consumption (W) | S
 3060 Ti | 7950 | 1350 | 120 | 60 | 500
 3070 | 7950 | 1050 | 117 | 60 | 513
 3090 | 10401 | 1080 | 286 | 117 | 411
+
+
+## <a name="count03"></a> 3. Autotune (experimental from v0.3.0.5+)
+
+Autotune takes user's input - `Memory clock (absolute)` and determines optimal `Core clock limit` so you get **best speed and efficiency**. The result could still be further tweaked for perhaps additional 1% of performance or efficiency, but considering that **Autotune** does everything automatically and very fast (just one iteration through viable core clock limits simultaneously testing for performance), there is serious question whether additional tweaking is even worth your time.
+
+Autotune works through alternative OC method introduced in version 0.3.0.4. Besides providing absolute memory clock, user can also provide starting core clock limit to speed things up. The higher this limit is set, the less iterations are needed thus the algorithm can finish faster. But providing too high value means you may "miss out" the possible better OC configuration. If you are a beginner, we suggest leaving this value intact and only start using it once you gain some experiences so you know what to expect from each video card.
+
+Unfortunately, due to API limitations of NVIDIA management libraries, Alternative OC and Autotune features are available only for RTX series (2000 and 3000). Since Alternative OC works for **Quadro and Tesla** cards (as long as Memory clock is not changed), we expect Autotune to work for these cards as well, but we were not able to test that yet.
