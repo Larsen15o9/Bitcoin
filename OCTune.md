@@ -71,10 +71,20 @@ GPU Model | Absolute memory clock | Core clock limit | Power consumption (W) | S
 
 ## <a name="count03"></a> 3. Autotune (experimental from v0.3.0.5+)
 
-Autotune takes user's input - `Memory clock (absolute)` and determines optimal `Core clock limit` so you get **best speed and efficiency**. The result could still be further tweaked for perhaps additional 1% of performance or efficiency, but considering that **Autotune** does everything automatically and very fast (just one iteration through viable core clock limits simultaneously testing for performance), there is serious question whether additional tweaking is even worth your time.
+Autotune takes user's input - `Memory clock (absolute)` and determines optimal `Core clock limit` so you get **best speed or efficiency**. The result could still be further tweaked for perhaps additional 1% of performance or efficiency, but considering that **Autotune** does everything automatically and very fast (just one iteration through viable core clock limits simultaneously testing for performance), there is serious question whether additional tweaking is even worth your time.
 
-Autotune works through alternative OC method introduced in version 0.3.0.4. Besides providing absolute memory clock, user can also provide starting core clock limit to speed things up. The higher this limit is set, the less iterations are needed thus the algorithm can finish faster. But providing too high value means you may "miss out" the possible better OC configuration. If you are a beginner, we suggest leaving this value intact and only start using it once you gain some experiences so you know what to expect from each video card.
+Autotune works through alternative OC method introduced in version 0.3.0.4. Besides providing absolute memory clock, user provides starting core clock and ending core clock limit. The smaller the interval, the less iterations are needed thus the algorithm can finish faster. But providing too small interval means you may "miss out" the possible better OC configuration. If you are a beginner, we suggest leaving these values intact and only start modifying them once you gain some experiences so you know what to expect from each video card.
 
 Unfortunately, due to API limitations of NVIDIA management libraries, Alternative OC and Autotune features are available only for RTX series (2000 and 3000). Since Alternative OC works for **Quadro and Tesla** cards (as long as Memory clock is not changed), we expect Autotune to work for these cards as well, but we were not able to test that yet.
 
 Autotune works much better on video cards that **do not** have display connected. If you have a chance to (at least temporary) connect display through another card (perhaps integrated one?), then we suggest doing so, because your results will be much better.
+
+You might be wondering what kind of values to use for Memory clock. I have prepared some classification of low, medium and high clocks. You should start with low and then move onto medium and high if everything is working stable.
+
+GPU Model | Default memory clock | Low memory clock | Medium memory clock | High memory clock
+----------|----------------------|------------------|---------------------|-------------------
+3060 Ti, 3070 | 6800 | 7500 | 7900 | 8100
+3080 | 9250 | 9800 | 10300 | 10500
+3090 | 9500 | 10000 | 10400 | 10600
+
+For 2000 series cards, I believe you can use values written for 3060 Ti and 3070 as they all use same type of memory (GDDR6). Start with Low memory clocks and run Autotune to get best core clock limit. Then run this configuration for at least one day. If nothing crashes. Great, try with medium memory clock and repeat. Most of video cards should be able to handle clocks from medium class. But you may be unlucky (silicon lottery).
