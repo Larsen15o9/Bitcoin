@@ -85,6 +85,6 @@ GPU Model | Default memory clock | Low memory clock | Medium memory clock | High
 ----------|----------------------|------------------|---------------------|-------------------
 3060 Ti, 3070 | 6800 | 7500 | 7900 | 8100
 3080 | 9250 | 9800 | 10300 | 10500
-3090 | 9500 | 10000 | 10400 | 10600
+3090 | 9750 | 10050 | 10400 | 10600
 
 For 2000 series cards, I believe you can use values written for 3060 Ti and 3070 as they all use same type of memory (GDDR6). Start with Low memory clocks and run Autotune to get best core clock limit. Then run this configuration for at least one day. If nothing crashes. Great, try with medium memory clock and repeat. Most of video cards should be able to handle clocks from medium class. But you may be unlucky (silicon lottery).
