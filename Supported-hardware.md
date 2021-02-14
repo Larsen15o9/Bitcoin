@@ -27,3 +27,5 @@ Note the above models are **only** desktop variants. Notebook variants are not t
 Additionally to the above video cards, if your PC has capable CPU, you can enable CPU mining. Following CPUs are supported:
 * All Intel CPUs with AVX2 support
 * All AMD CPUs with AVX2 support
+
+**NOTE: CPU mining is only addition to GPU mining. You cannot use QuickMiner to only do CPU mining without GPU mining - it does not work. Please use [NiceHash Miner](https://github.com/nicehash/NiceHashMiner) if you plan to do only CPU mining.**
