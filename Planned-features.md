@@ -4,3 +4,4 @@ List of features that are planned for future releases of NiceHash QuickMiner (ch
 * [x] Automatic OCTune
 * [ ] Ability to modify GPU voltages
 * [ ] Idle only mining with better integration for gamers
+* [ ] Linux support (not decided how exactly yet)
