@@ -3,3 +3,4 @@ List of features that are planned for future releases of NiceHash QuickMiner (ch
 * [x] Support for latest AMD video cards
 * [x] Automatic OCTune
 * [ ] Ability to modify GPU voltages
+* [ ] Idle only mining with better integration for gamers
