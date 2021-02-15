@@ -15,3 +15,11 @@ Excavator is not capable of getting information about power consumption, therefo
 You need to make sure, your card is running in P0 state. This can be achieved using some 3rd party tools as suggested in [this Reddit thread](https://www.reddit.com/r/RenderToken/comments/9w2rd9/how_to_use_maximum_p0_power_state_with_nvidia/).
 
 Additionally, GTX 1080 and GTX 1080 Ti have GDDR5X memory which needs different memory timings for better performance. There is no publicly available code to do that, there are only closed source protected binaries of EthEnlargmentPill from unknown authors, which I do NOT suggest to use if you have any sensitive information.
+
+### When I do CPU mining, my CPU isn't fully loaded.
+By default, NiceHash QuickMiner starts XMRig with 50% load hint. This can be easily changed to 100% or any other number in `nhqm.conf` by modifying extra launch parameters and providing hint for 100% load:
+```
+...
+"CPUMinerELP":"--cpu-max-threads-hint 100 --print-time 15",
+...
+```
