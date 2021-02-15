@@ -1,8 +1,9 @@
 # Questions:
-[1. Why is NiceHashQuickMiner started with administrator privileges?](#faq01)<br>
+[1. Why is NiceHash QuickMiner started with administrator privileges?](#faq01)<br>
 [2. What happens when DAG is being generated?](#faq02)<br>
 [3. Where can I see number of accepted and rejects shares?](#faq03)<br>
 [4. Why do some jobs have "clean" suffix?](#faq04)<br>
+[5. Does NiceHash QuickMiner overclock my cards by default?](#faq05)<br>
 
 # Answers:
 
@@ -23,3 +24,8 @@ You can see number of accepted and rejected shares by calling [API method algori
 When job has "clean" suffix, it means that miner needs to drop current job **immediately** and start working on the new job - all previous work is not valid anymore and would result in a rejected share (job not found - stale share). One of the miner qualities is defined by the amount of how much time it takes for it to drop current job and start working on the new one. The time in between receiving new clean job and start working on the new job is wasted as these found shares **always** result in rejection as stale shares. This quality is not visible by the reported hashing speed but rather as a calculated speed on server side (NiceHash - accepted speed -> your actual profitability) or rather amount of stale shares (also your high latency to server increase amount of stale shares). Excavator has this switching time in between 1-3 milliseconds on modern CPUs of latest generation (Intel 10th gen, AMD Ryzen, Threadripper). It can be also observed and calculated from logs (when full detailed logging with `-f 0` is enabled). This task is not so simple to optimize, because NVIDIA kernel launches are non preemptive, which means, once kernel is started, it cannot be terminated. Unfortunately, time-short kernel result in reduced speed because time is wasted managing kernel launch and finish. So, usually a certain balance is needed so that kernels do not take too long and cause a lot of wasted tame when jobs are switched and that also don't last too short time to waste mining time due to excessive kernel launch management. Of course, any miner developer can use various tricks to solve this issue and it is not only about tweaking these two values. Anyway... this is off topic now already. Back to "clean" jobs.
 
 When job is **not** "clean" it means that miner **does not** have to drop current job, because previous job is still valid. Therefore when you see a job that isn't "clean" you know that it won't reduce your miner speed consequently. Excavator is made to simply ignore non-clean jobs (these only get printed out, but that's all).
+
+
+### <a name="faq05"></a> 5. Does NiceHash QuickMiner overclock my cards by default?
+
+**NO!** There is no overclocking done without explicit command from the user.
