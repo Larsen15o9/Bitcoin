@@ -21,7 +21,7 @@ You have to fiddle with core clock, memory clock and power limit until you find 
 
 ## <a name="count02"></a> 2. New OCTune (v0.3.0.4+) with alternative overclocking abilities
 
-_Note: This feature is currently available only in `RC` version of NiceHash QuickMiner which can be obtained [here](https://github.com/nicehash/NiceHashQuickMiner/releases/tag/v0.3.0.6_RC)._
+_Note: This feature is currently available only in `RC` version of NiceHash QuickMiner.
 
 With version 0.3.0.4 alternative overclocking ability was added to NiceHash QuickMiner. With this method, you only need to provide two values to optimize your mining efficiency:
 * absolute max core clock of video card,
