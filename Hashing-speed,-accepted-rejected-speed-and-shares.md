@@ -1,4 +1,4 @@
-Here, we will explain how mining works, how NiceHash works, how do you get paid and how can you monitor whether your mining system is fully optimized and working with complete reliability. It will also quickly teach you how to evaluate other miners and compare them to NiceHash QuickMiner.
+Here, we will explain how mining works, how NiceHash works, how do you get paid and how can you monitor whether your mining system is fully optimized and working with complete reliability and most importantly, how to read NiceHash charts. It will also quickly teach you how to evaluate other miners and compare them to NiceHash QuickMiner.
 
 
 ### Cryptocurrency mining on NiceHash (very simple version)
