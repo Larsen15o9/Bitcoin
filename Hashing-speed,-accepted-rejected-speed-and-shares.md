@@ -6,7 +6,7 @@ Cryptocurrency mining is nothing else but performing calculations of hash values
 
 `Xa = HASH(Ia + Ns + Nm)`
 
-`Xa` is a very big number. If this number is smaller than `Ta` (also provided in _job_ from NiceHash), then your miner has found a **share** and corresponding `Nm` is sent to NiceHash as _proof-of-work_. This proves that your miner actually performed work to _find_ appropriate **nonce**. Because HASH is an one way function, there is no other possibility for miner but to try many **nonces**. Mining with 60 MH/s means that your miner is trying 60 million of HASH calculations per second.
+`Xa` is a very big number. If this number is smaller than `Ta` (_target_ - also provided in _job_), then your miner finds a **share** and corresponding `Nm` is sent to NiceHash as _proof-of-work_. This proves that your miner actually performed work to _find_ appropriate **nonce**. Because HASH is an one way function, there is no other possibility for miner but to try many **nonces**. Mining with 60 MH/s means that your miner is trying 60 million of nonces per second and making 60 million HASH calculations per second.
 
 
 ### Shares
@@ -35,23 +35,29 @@ Therefore it does not matter how many shares your miner finds, but rather how ma
 
 > We have 6 rigs with following miner speeds: 587 MH/s, 409 MH/s, 261 MH/s, 215 MH/s, 214 MH/s and 121 MH/s. The total speed of all rigs is 1807 MH/s.
 >
-> When we check average speed over longer period of time (at least several hours for multiple/big rigs and several days for small/single rigs), the speed has to match to our total rig speed as visible on the chart below. The total accepted speed on the chart is lower, because we need to account in 1.14 % reject rate. At the speed of ~1800 MH/s, that is approx. 20 MH/s. When we deduct 20 MH/s from our total rig speed of 1807 MH/s, we get 1787 MH/s. Our chart is showing us 1791 MH/s which is 4 MH/s more - this can be attributed to _better luck_ during that period of time.
+> When we check average speed over longer period of time (at least several hours for multiple/big rigs and several days for small/single rigs), the speed has to match to our total rig speed as visible on the chart below. The total accepted speed on the chart is lower, because we need to account in 1.14 % reject rate. At the speed of ~1800 MH/s, that is approx. 20 MH/s. When we deduct 20 MH/s from our total rig speed of 1807 MH/s, we get 1787 MH/s. Our chart is showing us 1791 MH/s which is 4 MH/s above - this can be attributed to _better luck_ during that period of time. It also tells us that chosen miner is reporting hashing speed **honestly and correctly**.
 
 ![Chart - accepted speed](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/chart_all.png?raw=true)
 
-**IMPORTANT!** Accepted speed on NiceHash is the most important chart. It tells you how your miner is **actually** performing. If your chart is showing greatly depressed numbers compared to what your miner is displaying in console, then you are being **cheated out**! It is a well known fact that some devfee miners artificially inflate console-speed numbers to attract more customers and in most cases they do not deduct devfee speed. So you may get impression that your miner is performing great with high speed, but on NiceHash, your accepted speed chart shows different story. **It does not matter what speed your miner reports, but what accepted speed chart on NiceHash says - you are paid directly according to that!**
+**IMPORTANT!** Accepted speed on NiceHash is the most important chart. It tells you how your miner is **actually** performing. If your chart is showing greatly depressed numbers compared to what your miner is displaying in console, then you are being **cheated out**! It is a well known fact that some devfee miners artificially inflate console-speed numbers to attract more customers and in most cases they do not deduct devfee speed. So you may get impression that your miner is performing great with high speed, but on NiceHash, your accepted speed chart shows different story. **It does not matter what speed your miner reports, but what accepted speed chart on NiceHash says - you are paid directly according to that!** 
+
+NiceHash Rig Manager displays:
+* local profitability and
+* actual profitability.
+
+**Local profitability** is speed reported from your miners multiplied with current profitability. It is more stable, but it can be wrong if miner is artificially inflating speed numbers. **Actual profitability** is calculated by multiplying accepted speed with current profitability. That is why it is called **actual - this is what you are actually getting paid**.
 
 
 ### Rejected shares - _share above target_
-When you get this type of rejected share, it means that your miner provided **wrong or invalid** calculation and as a consequence wrong result. Usually, this happens if you overclock VRAM too much - memory is not stable anymore and errors happen. You should not have many of these type of rejects (perhaps only one or two shares here and there). In Rig Manager, you can filter out all other shares and view only **average percentage of rejected shares of type _share above target_**.
+When you get this type of rejected share, it means that your miner provided **wrong or invalid** calculation and as a consequence wrong result. Usually, this happens if you overclock VRAM too much - memory is not stable anymore and errors happen. Naturally, you are **not** paid for rejected shares of any type. You should not have many of these type of rejects (perhaps only one or two shares here and there). In Rig Manager, you can filter out all other shares and view only **average percentage of rejected shares of type _target_**.
 
-> In our example, we had only few shares of that type rejected, so the chart has only two spikes and average percentage is so low that, when rounding it to two decimals, it shows 0%. This shows that our rigs are properly tweaked and tuned not to produce too many rejects of type _share above target_.
+> In our example, we had only few rejected shares of type _target_, so the chart has only two spikes and average percentage is so low that, when rounding it to two decimals, it shows 0.00%. This tells us our rigs are properly tweaked and tuned not to produce too many rejects of type _share above target_.
 
 ![Chart - rejected speed - target](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/chart_r_target.png?raw=true)
 
 
 ### Rejected shares - _job not found_ (stale)
-This type of reject is unavoidable. It depends on many factors, including your network latency to chosen NiceHash server. That's why it is important to choose the one with the lowest latency as [instructed here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks#1-choose-your-service-location-to-improve-your-latency-and-reduce-number-of-stale-shares). It can also depend on your chosen miner software. A miner software that is sending old shares for jobs that are not valid anymore, will generate you stale shares.
+This type of reject is unavoidable. It depends on many factors, including your network latency to chosen NiceHash server. That's why it is important to choose the one with the lowest latency as [instructed here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks#1-choose-your-service-location-to-improve-your-latency-and-reduce-number-of-stale-shares). It can also depend on your chosen miner software. A miner software that is sending old shares for jobs that are not valid anymore, will generate you stale shares. It is important for miner to quickly switch to and start working on the new job when old jobs are stale. Excavator performs this task in approx 1-2 milliseconds when using modern CPUs.
 
 > Our stale share ratio is 0.97%. This means that we are losing about 1% of possible income. With approx. 1800 MH/s of total rig speed, this means we are _wasting_ (or throwing away) approx. 18 MH/s of it. 
 
