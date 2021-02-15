@@ -4,6 +4,7 @@
 [3. Where can I see number of accepted and rejects shares?](#faq03)<br>
 [4. Why do some jobs have "clean" suffix?](#faq04)<br>
 [5. Does NiceHash QuickMiner overclock my cards by default?](#faq05)<br>
+[6. How can I limit CPU mining to less cores/load?](#faq06)<br>
 
 # Answers:
 
@@ -27,5 +28,13 @@ When job is **not** "clean" it means that miner **does not** have to drop curren
 
 
 ### <a name="faq05"></a> 5. Does NiceHash QuickMiner overclock my cards by default?
-
 **NO!** There is no overclocking done without explicit command from the user.
+
+
+### <a name="faq06"></a> 6. How can I limit CPU mining to less cores/load?
+By default, NiceHash QuickMiner starts XMRig with 50% load hint. This can be easily changed to 100% or any other number in `nhqm.conf` by modifying extra launch parameters and providing hint for whatever load you wish. If you provide 25, then XMRig will try to load 25% of your CPU, 50 then 50% etc.
+```
+...
+"CPUMinerELP":"--cpu-max-threads-hint 50 --print-time 15",
+...
+```
