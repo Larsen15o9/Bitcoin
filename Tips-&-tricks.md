@@ -29,6 +29,8 @@ When device is malfunction and not mining, Error will be displayed in [Rig Manag
 
 We suggest you to try to set action to number `2` (Restart Excavator). If that does not help and resolve the issue automatically, then set this to number `3`.  The above mentioned config values can be found in nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`).
 
+_Too high speed_ is defined with property `maxDeviceSpeed` which is 300 by default. This means that speed 300 MH/s is considered being too high and unreal thus some action is going to be taken to fix the error state. According to our tests, it is best to leave this value intact as it also works fine with fastest RTX 3090 cards (120 MH/s). If some day faster GPUs are introduced, then this value would have to be raised.
+
 ### 4. Enable logging for better troubleshooting
 
 When something does go wrong, it can be fixed in most cases, but enough information is needed. We suggest you to enable file logging when you have problems. You can do this by modifying nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`). Set `"fileLogLevel"` to `0` and also change `"launchCommandLine"` for Excavator to `"-wp 18000 -d 2 -f 0"` (note the last number changed to zero). This will enable both (NiceHash QuickMiner and Excavator full file logging). When submitting [issue here](https://github.com/nicehash/NiceHashQuickMiner/issues), it is strongly suggested to also provide these logs so the issue can be identified and resolved faster. Do not forget to **remove your personal information** from logs (such as your Mining Address) before you submit them.
