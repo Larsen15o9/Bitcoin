@@ -23,3 +23,7 @@ By default, NiceHash QuickMiner starts XMRig with 50% load hint. This can be eas
 "CPUMinerELP":"--cpu-max-threads-hint 100 --print-time 15",
 ...
 ```
+
+### Excavator cannot connect and repeats warning _handshake declined by remote peer_
+
+Some routers/firewalls/modems may be blocking NiceHash domains. In that case, you have to check network security settings of your devices. In one particular case, someone had to disable `Cyber Security` on his _Century Link Modem_.
