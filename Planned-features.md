@@ -6,3 +6,4 @@ List of features that are planned for future releases of NiceHash QuickMiner (ch
 * [ ] Idle only mining with better integration for gamers
 * [ ] Linux support (not decided how exactly yet)
 * [ ] Investigate and implement full autotune (incl. memory clock)
+* [ ] Update to the latest version of XMRig
