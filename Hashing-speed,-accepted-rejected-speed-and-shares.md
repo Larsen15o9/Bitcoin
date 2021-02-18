@@ -31,7 +31,8 @@ NiceHash adjusts `Da` (difficulty) dynamically according to your miner's speed:
 * If your miner is faster and is submitting shares more frequently than expected, NiceHash increases difficulty.
 * If your miner is slower and is submitting shares rarely, then Nicehash decreases difficulty.
 
-Therefore it does not matter how many shares your miner finds, but rather how many weighted shares your miner finds. This value can be best represented with a two dimensional graph of **accepted speed**.
+Therefore it does not matter how many shares your miner finds, but rather how many weighted shares your miner finds. This value can be best represented with a two dimensional graph of **accepted speed**. You can see this chart if you click on `All Algorithms` and then choose `Daggerhashimoto` as shown in the following picture:
+![Chart - get speed](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/find_chart.png?raw=true)
 
 > We have 6 rigs with following miner speeds: 587 MH/s, 409 MH/s, 261 MH/s, 215 MH/s, 214 MH/s and 121 MH/s. The total speed of all rigs is 1807 MH/s.
 >
