@@ -8,3 +8,4 @@ List of features that are planned for future releases of NiceHash QuickMiner (ch
 * [ ] Investigate and implement full autotune (incl. memory clock)
 * [ ] Update to the latest version of XMRig
 * [ ] Working reliable intensity option
+* [ ] Minimum fan speed
