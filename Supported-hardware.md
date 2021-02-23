@@ -8,7 +8,7 @@ NVIDIA GeForce GTX 1080 | - | - | -
 NVIDIA GeForce GTX 1080 Ti | 38 MH/s | - | -
 NVIDIA TITAN Xp | - | - | -
 NVIDIA TITAN V | 75 MH/s | 580 kH/J | - | Max clock 930, 125 W
-NVIDIA GeForce GTX 1660 | 25 MH/s | 520 kH/J | Max clock 1230, Mem +600, 25 MH/s @ 48 W
+NVIDIA GeForce GTX 1660 | 25 MH/s | 530 kH/J | Max clock 1230, Mem +600, 25 MH/s @ 48 W
 NVIDIA GeForce GTX 1660 Super | 32 MH/s | 410 kH/J | Set mem -505!
 NVIDIA GeForce GTX 1660 Ti | 32 MH/s | 475 kH/J | Mem +900, max clock 900
 NVIDIA GeForce RTX 2060 | 33 MH/s | 390 kH/J | Mem +900, max clock ~1050
