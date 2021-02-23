@@ -1,4 +1,4 @@
-Downloading and installing NiceHash QuickMiner is performed in following steps.
+Downloading and installing NiceHash QuickMiner is performed in following steps. **NEWS:** You can now use [download-installer](https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.3.2.6_RC/NiceHashQuickMinerInstaller.exe) which performs all the steps below automatically. After you install it, simply go to [the next page - running NiceHash QuickMiner for the first time](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-for-the-first-time).
 
 ### 1. Choosing version and downloading from GitHub
 
