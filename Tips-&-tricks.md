@@ -2,7 +2,9 @@
 
 Open nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`) and modify `"serviceLocation"`. Following locations are possible:
 * Europe (Belgium): `0`,
-* USA (California): `1`.
+* USA (California): `1`,
+* Europe (Finland): `2`,
+* USA (Virginia): `3`.
 
 In the near future, more locations will be possible to choose from. After saving the config file, your mining location will be updated almost instantly. Observe latencies from accepted shares in Excavator console.
 
