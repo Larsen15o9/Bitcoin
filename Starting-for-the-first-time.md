@@ -59,15 +59,21 @@ When your rig appears in [Rig Manager](https://www.nicehash.com/my/mining/rigs) 
 
 Following table explains for each GPU component what is happening. Do note that this table is very generalized and that each GPU might behave slightly differently.
 
-Chosen optimisation | GPU core | VRAM | Fan speeds | Temperatures | Total power consumption | Hashrate speed | Efficiency
--------------------|----------|-----|----------|------------|---------------|-----|---
-**Manual** | Stock clock | Stock clock | GPU Default | Very high | Very high | Low | **Very low**
-**Lite**| Limited to very low value | Increased mildly | Keep GPU*<br>below 60 ℃ | Low | Low | Medium | **High**
-**Medium**| Limited to low value | Increased moderately | Keep GPU*<br>below 60 ℃ | Low-Medium | Low-Medium | High | **Very high**
+Effect \ Optimisation | **Manual** | **Lite** | **Medium** | **High**
+---|------------|----------|------------|----
+GPU Core Clock | Stock frequency | Very low frequency | Low frequency | _soon_
+VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | _soon_
+Fan Speeds | GPU Default | Keep GPU* below 60 ℃ | Keep GPU* below 60 ℃ | _soon_
+Temperatures | Very high | Very low | Low | _soon_
+Power consumption | Very high | Very low | Low | _soon_
+Mining Speed | Low | Medium-High | High | _soon_
+**Efficiency** | **Poor** | **Good** | **Very good** | _soon_
 
 _* For RTX 3080 and RTX 3090 also keep VRAM Tjunction temperature below 95 ℃._
 
-Optimisation feature is only available for RTX 2000 series, RTX 3000 series, GTX 1660, GTX 1660 Ti, GTX 1660 Super and TITAN V. Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the near future to offer you even better performance and efficiency. To get latest optimisation applied for your GPU, you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json) that is being used.
+Optimisation feature is only available for RTX 2000 series, RTX 3000 series, GTX 1660, GTX 1660 Ti, GTX 1660 Super and TITAN V. Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the near future to offer you even better performance and efficiency. To get latest optimisation applied for your GPU, you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json) that is being used. Medium optimisation may not work for all cards. We are working on Lite optimisation to be able to work for 99.9% of all video cards.
+
+**WARNING:** Optimisation applies overclock to your card which means that your card is running with clocks that were not set by NVIDIA. This means that your card may not be stable. It is strongly suggested to try Lite optimisation first and test it for a day. If everything works okay, then try Medium. Also, do not enable Autostart with Windows before you finish performing optimisations. It can happen that you get caught in an endless restart loop because NiceHash QuickMiner applies overclocks at start and can cause immediate crash of your system if clocks are too high for your system. In that case, unplugging internet connection for the boot time may help because Excavator cannot mine until it gets data from the servers.
 
 
 ### 7. Startup with Windows?
