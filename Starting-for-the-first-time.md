@@ -1,6 +1,10 @@
+
+
 ### 1. Launch NiceHashQuickMiner.exe
 
-When you have successfully [installed](https://github.com/nicehash/NiceHashQuickMiner/wiki/Installation) NiceHash QuickMiner, start it by double clicking `NiceHashQuickMiner.exe`.
+If you have used `Installer` then you have probably created desktop shortcut for launching NiceHash QuickMiner. Just double click it to launch NiceHash QuickMiner and then go to step 2.
+
+Otherwise if you have used `ZIP` file, then open folder where you extracted all files and start it by double clicking `NiceHashQuickMiner.exe`.
 
 ![Files](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/start.png?raw=true)
 
