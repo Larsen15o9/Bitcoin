@@ -61,13 +61,13 @@ Following table explains for each GPU component what is happening. Do note that 
 
 Effect \ Optimisation | **Manual** | **Lite** | **Medium** | **High**
 ---|------------|----------|------------|----
-GPU Core Clock | Stock frequency | Very low frequency | Low frequency | _soon_
-VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | _soon_
-Fan Speeds | GPU Default | Keep GPU* below 60 ℃ | Keep GPU* below 60 ℃ | _soon_
-Temperatures | Very high | Very low | Low | _soon_
-Power consumption | Very high | Very low | Low | _soon_
-Mining Speed | Low | Medium-High | High | _soon_
-**Efficiency** | **Poor** | **Good** | **Very good** | _soon_
+GPU Core Clock | Stock frequency | Very low frequency | Low frequency | _coming<br>soon_
+VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | _coming<br>soon_
+Fan Speeds | GPU Default | Keep GPU* below 60 ℃ | Keep GPU* below 60 ℃ | _coming<br>soon_
+Temperatures | Very high | Very low | Low | _coming<br>soon_
+Power consumption | Very high | Very low | Low | _coming<br>soon_
+Mining Speed | Low | Medium-High | High | _coming<br>soon_
+**Efficiency** | **Poor** | **Good** | **Very good** | _coming<br>soon_
 
 _* For RTX 3080 and RTX 3090 also keep VRAM Tjunction temperature below 95 ℃._
 
