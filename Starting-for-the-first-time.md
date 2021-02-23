@@ -51,23 +51,23 @@ You can do following actions:
 
 ### 6. Optimize your GPU with one click!
 
-When your rig appears in [Rig Manager](https://www.nicehash.com/my/mining/rigs) you can quickly optimize mining performance by clicking button `Optimize` and then choosing among three options:
+When your rig appears in [Rig Manager](https://www.nicehash.com/my/mining/rigs) you can quickly optimize mining performance by clicking button `OPTIMIZE` and then choosing among three options:
 - **Manual:** default mode, nothing is changed, NiceHash QuickMiner does not manage your GPU,
 - **Lite:** mild optimisation is applied and
 - **Medium:** average optimisation is applied.
-![Tray icon](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/optimize_button.png?raw=true)
+![Optimisations](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/optimize_button.png?raw=true)
 
-What does actually happen with your GPU when mining optimisation is applied? Following table explains for each GPU component what is happening. Do note that this table is very generalized and that each GPU might behave slightly differently.
+Following table explains for each GPU component what is happening. Do note that this table is very generalized and that each GPU might behave slightly differently.
 
-Chosen optimisation | GPU core | VRAM | Fan speeds | Temperatures | Total power consumption | Hashrate speed
--------------------|----------|-----|----------|------------|---------------|-----
-**Manual** | Stock clock | Stock clock | GPU Default | Very high | Very high | **Low**
-**Lite**| Limited to very low value | Increased mildly | Keep GPU*<br>below 60 ℃ | Low | Low | **Medium**
-**Medium**| Limited to low value | Increased moderately | Keep GPU*<br>below 60 ℃ | Low-Medium | Low-Medium | **High**
+Chosen optimisation | GPU core | VRAM | Fan speeds | Temperatures | Total power consumption | Hashrate speed | Efficiency
+-------------------|----------|-----|----------|------------|---------------|-----|---
+**Manual** | Stock clock | Stock clock | GPU Default | Very high | Very high | Low | **Very low**
+**Lite**| Limited to very low value | Increased mildly | Keep GPU*<br>below 60 ℃ | Low | Low | Medium | **High**
+**Medium**| Limited to low value | Increased moderately | Keep GPU*<br>below 60 ℃ | Low-Medium | Low-Medium | High | **Very high**
 
 _* For RTX 3080 and RTX 3090 also keep VRAM Tjunction temperature below 95 ℃._
 
-Optimisation feature is only available for RTX series and GTX 1660, 1660 Ti and 1660 Super. Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the future to offer you even better experience. To get latest optimisation applied for your GPU you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json) that is being used.
+Optimisation feature is only available for RTX 2000 series, RTX 3000 series, GTX 1660, GTX 1660 Ti, GTX 1660 Super and TITAN V. Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the near future to offer you even better performance and efficiency. To get latest optimisation applied for your GPU, you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json) that is being used.
 
 
 ### 7. Startup with Windows?
