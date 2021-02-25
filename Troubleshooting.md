@@ -1,4 +1,4 @@
-### Error #102 Excavator.exe is missing
+### Error #102 Excavator.exe is missing.
 Most likely your Antivirus (AV) or Microsoft Defender has deleted it. Make sure to add exception for following files:
 * excavator.exe
 * NiceHashQuickMiner.exe
@@ -24,6 +24,14 @@ By default, NiceHash QuickMiner starts XMRig with 50% load hint. This can be eas
 ...
 ```
 
-### Excavator cannot connect and repeats warning _handshake declined by remote peer_
+### Excavator cannot connect and repeats warning _handshake declined by remote peer_.
 
-Some routers/firewalls/modems may be blocking NiceHash domains. In that case, you have to check network security settings of your devices. In one particular case, someone had to disable `Cyber Security` on his _Century Link Modem_.
+Some routers/firewalls/modems may be blocking NiceHash domains. In that case, you have to check network security settings of your devices. In one particular case, someone had to disable `Cyber Security` on his _Century Link Modem_. Also note that this issue should be completely fixed in versions v0.3.2.6 and later as mining domains are now resolved using DNS over HTTPS.
+
+### I get NVML related error.
+![NVML Error](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/nvml_error.png?raw=true)
+
+If you get error like this, then following is possible:
+- You do not have [supported hardware](https://github.com/nicehash/NiceHashQuickMiner/wiki/Supported-hardware) - NiceHash QuickMiner works only on NVIDIA video cards, it does not support AMD video cards!
+- Your driver has just been updated; in that case, a simple restart of your PC will resolve the issue.
+- You are using very old NVIDIA drivers. Update to the latest NVIDIA driver to fix the issue.
