@@ -19,6 +19,7 @@ NVIDIA GeForce RTX 2080 | 44 MH/s | 410 kH/J | Mem +900, max clock ~1050
 NVIDIA GeForce RTX 2080 Super | 44 MH/s | - | Mem +900, max clock ~1050
 NVIDIA GeForce RTX 2080 Ti | 63 MH/s | - | -
 NVIDIA TITAN RTX | - | - | -
+NVIDIA GeForce RTX 3060 | - | - | -
 NVIDIA GeForce RTX 3060 Ti | 63 MH/s | 520 kH/J | 62-64 MH/s - depends on chip
 NVIDIA GeForce RTX 3070 | 63 MH/s | 525 kH/J | 62-64 MH/s - depends on chip
 NVIDIA GeForce RTX 3080 | 101 MH/s | 460 kH/J | Keep GDDR6X cool for max eff.
