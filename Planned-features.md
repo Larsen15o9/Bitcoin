@@ -9,3 +9,4 @@ List of features that are planned for future releases of NiceHash QuickMiner (ch
 * [ ] Update to the latest version of XMRig
 * [ ] Working reliable intensity option
 * [ ] Minimum fan speed
+* [ ] Do not show this checkbox dialog upgrade
