@@ -14,12 +14,14 @@ Now you know the difference between NiceHash Miner and NiceHash QuickMiner. At t
 
 # Main features
 * It uses **ONLY** [Excavator for GPU mining](https://github.com/nicehash/excavator) and **XMRig** for CPU mining. Excavator is in-house developed miner and is 100% free of any malware and [XMRig is open source CPU miner](https://github.com/xmrig/xmrig). There are some more open source C# libraries used. Code running under NiceHash QuickMiner is either developed by NiceHash or used from public repositories which means it is 100% safe and you do not have to worry about exposing your PC's sensitive data or getting infected with malware. NiceHash QuickMiner will (in the future) NEVER use any closed source software, software of unknown or unverified origin.
-* No benchmarks, you start mining IMMEDIATELY.
-* No third party tools for GPU overclocking needed. NiceHash QuickMiner has its own powerful and quick tool for setting overclocks and fan speeds. Determine best overclock easily and quickly as never before.
+* No benchmarks, you start mining immediately.
+* No third party tools for GPU overclocking needed. NiceHash QuickMiner has its own powerful and quick tool for setting overclocks and fan speeds named OCTune. Determine best overclock easily and quickly as never before with OCTune.
 * Watchdog which takes care of restarting mining process if something fails.
 * Windows autostart methods.
 * Automatic updates.
 * No developer fees. There is only NiceHash 2% pool-side fee with PPS (pay-per-share) payout scheme.
+* Powerful and reliable one-click-optimisations for GTX 1660 and RTX series cards.
+* Game Mode to quickly switch between mining and gaming.
 
 # Drawbacks. Why it is better to use NiceHash Miner or NiceHash OS?
 - NiceHash QuickMiner mines **only** daggerhashimoto (ethereum). There is no algorithm switching so there is no chance for extra above-ethereum payrate that may come occasionally. The amount being lost depends on your GPU Model, but currently, it may be only up to several percentage.
