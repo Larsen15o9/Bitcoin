@@ -32,5 +32,6 @@ Now you know the difference between NiceHash Miner and NiceHash QuickMiner. At t
 * C# .NET library managedCuda: http://kunzmi.github.io/managedCuda
 * C# .NET library Microsoft.Win32.TaskScheduler: https://github.com/dahall/TaskScheduler#main-library
 * C# .NET library websocket-sharp: https://github.com/sta/websocket-sharp
+* C# .NET library DotNetZip: https://archive.codeplex.com/
 * XMRig miner (https://github.com/xmrig/xmrig); we have compiled version 6.7.0 with some modifications. The miner is stored in Excavator and it is extracted and launched when needed for CPU Mining.
 * XMRig miner uses signed driver WinRing0x64.sys. This driver has been signed on Saturday, 26 July 2008 by Noriyuki MIYAZAKI. We do not have source for it, however, we believe that this driver pose no security threat at all as it has good reputation by Microsoft and has been used by various software for almost 13 years already.
