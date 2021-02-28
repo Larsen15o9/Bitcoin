@@ -5,6 +5,7 @@
 [4. Why do some jobs have "clean" suffix?](#faq04)<br>
 [5. Does NiceHash QuickMiner overclock my cards by default?](#faq05)<br>
 [6. How can I limit CPU mining to less cores/load?](#faq06)<br>
+[7. Does having display connected to the video card have any effect on performance?](#faq07)<br>
 
 # Answers:
 
@@ -38,3 +39,13 @@ By default, NiceHash QuickMiner starts XMRig with 50% load hint. This can be eas
 "CPUMinerELP":"--cpu-max-threads-hint 50 --print-time 15",
 ...
 ```
+
+
+### <a name="faq07"></a> 7. Does having display connected to the video card have any effect on performance?
+Yes! When you have display connected to a GPU, there is some performance penalty and your GPU will not hash with max possible speed. How much you lose depends on many factors such as number of displays connected, output resolution, number and intensity of various applications that utilize your GPU (NiceHash QuickMiner is not the only application utilizing your video card). Sometimes the performance penalty can be very minimal and perhaps even hardly to notice. But it can also be severe - 10%, 15% or even 25% of your max hashrate may be lost due to this fact. There are number of possible alleviations to make the penalty less severe:
+- Use integrated GPU for rendering display.
+- [Turn off visual effects in Windows](https://www.windowscentral.com/how-disable-system-visual-effects-boost-performance-windows-10).
+- Turn off `Hardware acceleration` in applications that use GPU such as Website browsers.
+- Turn off/disable unneeded applications that utilize GPU.
+- Reduce resolution and/or refresh rate.
+- Reduce number of displays.
