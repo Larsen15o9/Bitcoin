@@ -2,7 +2,7 @@
 [1. Why is NiceHash QuickMiner started with administrator privileges?](#faq01)<br>
 [2. What happens when DAG is being generated?](#faq02)<br>
 [3. Where can I see number of accepted and rejects shares?](#faq03)<br>
-[4. Why do some jobs have "clean" suffix?](#faq04)<br>
+[4. Why do some jobs have "clean" suffix and should I do something about it?](#faq04)<br>
 [5. Does NiceHash QuickMiner overclock my cards by default?](#faq05)<br>
 [6. How can I limit CPU mining to less cores/load?](#faq06)<br>
 [7. Does having display connected to the video card have any effect on performance?](#faq07)<br>
@@ -21,12 +21,15 @@ Excavator would set memory overclock to 0 for the time DAG is being generated. T
 
 You can see number of accepted and rejected shares by calling [API method algorithm.list](https://github.com/nicehash/excavator/tree/master/api#algorithm-list). Note that, to the contrary of other PPLNS pools, for NiceHash, these values are not important. The reason is, because each share has a certain value that may not be the same. NiceHash does not have a fixed difficulty but rather dynamic. Higher difficulty shares have higher value. Since NiceHash has a PPS payout scheme (pay-per-share), it is very important to know the value of the share (share at twice the difficulty is worth twice as much BTC). If you chart down shares with their values, you get accepted/rejected speed. These charts are already available at NiceHash - Rig Manager. Other pools often display accepted speed on their charts as the value that the miner is reporting to the pool - and this value can be cheated-out (sending some extreme large value for example). NiceHash does not support speed reported by miner, rather it calculates accepted/rejected speed out of your shares. Thus, contrary to the other pools, these charts have very high value as they represent direct performance of your miner and your mining payouts are based directly on that.
 
-### <a name="faq04"></a> 4. Why do some jobs have "clean" suffix?
+### <a name="faq04"></a> 4. Why do some jobs have "clean" suffix and should I do something about it?
+
+Short answer: No, you cannot do anything about it and it is completely normal. Sometimes there will be more, sometimes there will be less of these jobs.
 
 When job has "clean" suffix, it means that miner needs to drop current job **immediately** and start working on the new job - all previous work is not valid anymore and would result in a rejected share (job not found - stale share). One of the miner qualities is defined by the amount of how much time it takes for it to drop current job and start working on the new one. The time in between receiving new clean job and start working on the new job is wasted as these found shares **always** result in rejection as stale shares. This quality is not visible by the reported hashing speed but rather as a calculated speed on server side (NiceHash - accepted speed -> your actual profitability) or rather amount of stale shares (also your high latency to server increase amount of stale shares). Excavator has this switching time in between 1-3 milliseconds on modern CPUs of latest generation (Intel 10th gen, AMD Ryzen, Threadripper). It can be also observed and calculated from logs (when full detailed logging with `-f 0` is enabled). This task is not so simple to optimize, because NVIDIA kernel launches are non preemptive, which means, once kernel is started, it cannot be terminated. Unfortunately, time-short kernel result in reduced speed because time is wasted managing kernel launch and finish. So, usually a certain balance is needed so that kernels do not take too long and cause a lot of wasted tame when jobs are switched and that also don't last too short time to waste mining time due to excessive kernel launch management. Of course, any miner developer can use various tricks to solve this issue and it is not only about tweaking these two values. Anyway... this is off topic now already. Back to "clean" jobs.
 
 When job is **not** "clean" it means that miner **does not** have to drop current job, because previous job is still valid. Therefore when you see a job that isn't "clean" you know that it won't reduce your miner speed consequently. Excavator is made to simply ignore non-clean jobs (these only get printed out, but that's all).
 
+So, now you want to get only jobs that are not clean, because then your miner does not have to be interrupted and you get higher performance. You **do not** have any control over that - NiceHash servers are sending jobs and these depends on buyers of hashpower.
 
 ### <a name="faq05"></a> 5. Does NiceHash QuickMiner overclock my cards by default?
 **NO!** There is no overclocking done without explicit command from the user.
