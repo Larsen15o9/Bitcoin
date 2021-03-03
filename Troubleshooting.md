@@ -37,5 +37,5 @@ If you get error like this, then following is possible:
 - You are using very old NVIDIA drivers. Update to the latest NVIDIA driver to fix the issue.
 
 ### NiceHash QuickMiner starts with Windows too quickly. Can I delay it?
-Yes, you can. Open Task Scheduler (write `Task Scheduler` in your search bar). Then follow markings from 1 to 4 from the picture below. Once you choose your wanted delay just close the dialog by pressing `OK`.
+Yes, you can. Open Task Scheduler (write `Task Scheduler` in your search bar). Then follow markings from 1 to 4 from the picture below. Once you choose your wanted delay just close the dialog by pressing `OK`. Next time you are booting Windows, NiceHash QuickMiner would start with adjusted delay.
 ![Task Scheduler](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/ts_delay.png?raw=true)
