@@ -11,8 +11,9 @@ Following table explains for each GPU component what is happening. Do note that 
 Effect \ Optimization | **Manual** | **Lite** | **Medium** | **High**
 ---|------------|----------|------------|----
 GPU Core Clock | Stock frequency | Very low frequency | Low frequency | _coming<br>soon_
+GPU Vcore | Stock voltage | Stock voltage | Stock voltage | _coming<br>soon_
 VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | _coming<br>soon_
-Fan Speeds | GPU Default | Keep GPU* below 60 ℃ | Keep GPU* below 60 ℃ | _coming<br>soon_
+Fan Speeds | GPU Default | Keep GPU* below 65 ℃ | Keep GPU* below 60 ℃ | _coming<br>soon_
 Temperatures | Very high | Very low | Low | _coming<br>soon_
 Power consumption | Very high | Very low | Low | _coming<br>soon_
 Mining Speed | Low | Medium-High | High | _coming<br>soon_
