@@ -12,6 +12,8 @@ In the near future, more locations will be possible to choose from. After saving
 
 The numbers marked with red squares must be as low as possible. Experiment with serviceLocation until you get the best result.
 
+**IMPORTANT: From version v0.4.0.0 it is best to leave this value at `-1` (Automatic). NiceHash QuickMiner will choose best location and also swap to the next best one if your current best location is in maintenance.**
+
 ### 2. Change your worker name
 
 If you have more mining PCs, you can set name for each one. You can do this online through [Rig Manager](https://www.nicehash.com/my/mining/rigs) or locally through config. Open nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`) and modify `"workerName"`. Name should only contain alphanumeric characters of English alphabet and max length is 15 characters.
@@ -22,8 +24,8 @@ Mining by itself is very unstable process because hardware is pushed to the limi
 
 Scenario | Possible action | Config name | Default action
 ---------|-----------------|-------------|---------------
-Excavator shows abnormally high speed | Do nothing `1`<br>Restart Excavator `2`<br>Restart PC `3` | `"whenDeviceSpeedTooHigh"` | `2`
-Excavator shows speed zero | Do nothing `1`<br>Restart Excavator `2`<br>Restart PC `3` | `"whenDeviceSpeedZero"` | `1`
+Excavator shows abnormally high speed | Do nothing `1`<br>Restart Excavator `2`<br>Restart PC `3`<br>Restart driver `4` | `"whenDeviceSpeedTooHigh"` | `2`
+Excavator shows speed zero | Do nothing `1`<br>Restart Excavator `2`<br>Restart PC `3`<br>Restart driver `4` | `"whenDeviceSpeedZero"` | `2`
 
 When device is malfunction and not mining, Error will be displayed in [Rig Manager](https://www.nicehash.com/my/mining/rigs) as visible on the following picture.
 
