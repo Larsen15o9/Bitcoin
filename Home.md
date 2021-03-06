@@ -11,7 +11,7 @@ This wiki contains all the information you need and you might need in the future
 * Information how to use OCTune is [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune).
 * Troubleshooting. You have a problem? You will find explanation and possible resolution [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Troubleshooting).
 * Frequently asked questions are answered [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ).
-* **NEW!!!** Details about curious `OPTIMIZE` buttons are [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimisations).
+* **NEW!!!** Details about curious `OPTIMIZE` buttons are [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations).
 * **NEW!!!** What is Game Mode and how to use it is explained [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Game-Mode).
 
 When you want to know more, I suggest spending 10 minutes to read [something more about mining](https://github.com/nicehash/NiceHashQuickMiner/wiki/Hashing-speed,-accepted-rejected-speed-and-shares).
