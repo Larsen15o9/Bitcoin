@@ -7,3 +7,4 @@ List of features that are planned for future releases of NiceHash QuickMiner (ch
 * [ ] Working reliable intensity option
 * [ ] Do not show this checkbox dialog upgrade
 * [ ] Mine certain hours/days only
+* [ ] Improved Game Mode (auto)
