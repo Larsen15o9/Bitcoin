@@ -49,6 +49,10 @@ Log level number | Log what?
 5 | fatal (FATAL)
 6 | no logging (disabled)
 
+From version 0.4.0.0 on, you can enable/disable logging with a click of a button:
+
+![Logging](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/logs_enable.png?raw=true)
+
 ### 5. Use OCTune to overclock your video cards to improve efficiency and mining income
 
 OCTune tips & tricks can be found [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune).
