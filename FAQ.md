@@ -6,6 +6,7 @@
 [5. Does NiceHash QuickMiner overclock my cards by default?](#faq05)<br>
 [6. How can I limit CPU mining to less cores/load?](#faq06)<br>
 [7. Does having display connected to the video card have any effect on performance?](#faq07)<br>
+[8. Why is my speed changing up and down constantly?](#faq08)<br>
 
 # Answers:
 
@@ -52,3 +53,15 @@ Yes! When you have display connected to a GPU, there is some performance penalty
 - Turn off/disable unneeded applications that utilize GPU.
 - Reduce resolution and/or refresh rate.
 - Reduce number of displays.
+
+
+
+
+### <a name="faq08"></a> 8. Why is my speed changing up and down constantly?
+Consider following facts:
+
+* For RTX 3080 and 3090 VRAM temperatures have big effect on your hashing speed. When temperature of GDDR6X VRAM goes above 80, there are already signs of slight throttling which gets much more intense over 105 and extreme when it approaches 110 degrees Celsius. Make sure to properly cool your VRAM to avoid this issue.
+
+* Is your card connected to the display? Resolution, refresh rate, number of monitors, activity on display, hardware acceleration (enabled/disabled)... are all the factors that affect your hashing speed. Excavator is made with mining set to low priority, so you can do various tasks on your PC and you do not notice any lag or jitter. If you want high speed on your primary video card then close all windows and just leave it be - you will see how hashing speed climbs up to the max.
+
+* Your actual speed in Rig Manager may dance up and down - that is normal. Check accepted speed over longer period of time (6 hours or more) and it should average out to your speed reported by the video card. You can read more about this [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Hashing-speed,-accepted-rejected-speed-and-shares).
