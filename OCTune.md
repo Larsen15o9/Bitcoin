@@ -2,6 +2,7 @@
 [1. Finding most efficient or the fastest combination of OC values for your card(s) - classic long path](#count01)<br>
 [2. Alternative overclocking explained](#count02)<br>
 [3. Autotune (experimental from v0.3.0.5) - very fast automatic OC tuning - 95% max efficiency guaranteed within 5 minutes!](#count03)<br>
+[4. Access OCTune in LAN or VPN](#count04)<br>
 
 ## <a name="count01"></a> 1. Finding most efficient or the fastest combination of OC values for your card(s)
 
@@ -88,3 +89,16 @@ GPU Model | Default memory clock | Low memory clock | Medium memory clock | High
 3090 | 9500 | 10000 | 10400 | 10600
 
 For 2000 series cards, I believe you can use values written for 3060 Ti and 3070 as they all use same type of memory (GDDR6). Start with Low memory clocks and run Autotune to get best core clock limit. Then run this configuration for at least one day. If nothing crashes. Great, try with medium memory clock and repeat. Most of video cards should be able to handle clocks from medium class. But you may be unlucky (silicon lottery).
+
+
+## <a name="count04"></a> 4. Access OCTune in LAN or VPN
+
+From version 0.4.1.2 you can configure OCTune to be accessible over LAN or VPN thus getting access to local Excavator from remote computer. You can can enable this by performing following modifications:
+1. Determine local IP of the mining rig - for example, we assume the IP is _192.168.1.22_.
+2. Edit config file `nhqm.conf`; change `"watchDogAPIHost" : "localhost"` to `"watchDogAPIHost" : "192.168.1.22"`.
+3. Edit config file `nhqm.conf`; find `"launchCommandLine"`. By default, this string has value `"-qx -qm -wp 18000 -d 2 -f 6"`. Add `-wi 192.168.1.22` so the modification is then: `"launchCommandLine" : "-qx -qm -wp 18000 -d 2 -f 0 -wi 192.168.1.22"`.
+4. Open _octune\octune.js_ with Notepad or any other preferred text editor (note, if you have installed NiceHash QuickMiner in Program Files folder, you will need Administrator privileges to modify files in that folder, so open your text editor as Administrator). Modify first line from `var url = "http://localhost:18000/";` to `var url = "http://192.168.1.22:18000/";`.
+5. Restart NiceHash QuickMiner. When starting up, Windows Firewall dialog will pop-up asking for permission to Excavator. Click `Allow Access`.
+6. When you want to access OCTune from remote computer, just copy _octune_ folder with all the files inside to the remote computer from where you would like to have access. Open _octune.html_ in your browser and it will connect to Excavator running on _192.168.1.22_. Any computer in the same subnet is going to have access.
+
+Therefore, if you have more mining rigs, you can configure to have access to OCTune of all of your rigs from one PC. In theory, you could make this work even over internet, but **we do not recommend** doing it, because it is risky and makes you vulnerable - Excavator does not have adequate security methods implemented to offer API over internet. If you would like to have access to remote location rigs, we suggest you to establish VPN and then configure each rig as described in points from 1 to 6.
