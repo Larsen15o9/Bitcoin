@@ -40,3 +40,5 @@ GeForce RTX 3080 - Medium | 96 MH/s | 220-240 W | 400-435 kH/J | GPU Core: max 6
 GeForce RTX 3080 - Lite | 90 MH/s | 200-220 W | 410-450 kH/J | GPU Core: max 64 ℃<br>VRAM: max 95 ℃
 GeForce RTX 3070 - Medium | 60-61 MH/s | 110-130 W | 460-550 kH/J | GPU Core: max 60 ℃
 GeForce RTX 3070 - Lite | 58 MH/s | 105-120 W | 480-550 kH/J | GPU Core: max 64 ℃
+GeForce RTX 3060 Ti - Medium | 60-61 MH/s | 110-130 W | 460-550 kH/J | GPU Core: max 60 ℃
+GeForce RTX 3060 Ti - Lite | 58 MH/s | 105-120 W | 480-550 kH/J | GPU Core: max 64 ℃
