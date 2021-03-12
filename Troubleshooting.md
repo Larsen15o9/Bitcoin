@@ -1,8 +1,7 @@
 ### Error #102 Excavator.exe is missing.
 Most likely your Antivirus (AV) or Microsoft Defender has deleted it. Make sure to add exception for following files:
-* excavator.exe
-* NiceHashQuickMiner.exe
-* nhqmservice.exe
+* excavator.exe,
+* NiceHashQuickMiner.exe and
 * xmrig.exe
 
 ### Warning #103 Your PC does not have enough Virtual Memory set. 
