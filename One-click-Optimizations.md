@@ -29,3 +29,12 @@ Additional good-to-know:
 - Do not use MSI Afterburner. NiceHash QuickMiner has everything you need. MSI Afterburner can only mess with QuickMiner settings and results can be very unpredictable then.
 - Before using Optimize button, make sure you **did not set Force P0 for Cuda**. Memory overclocks will most likely be too high in that case and crash your PC.
 - Optimize was designed as an All-In-One solution. This means that you do **not need any** other tool/program but just NVIDIA drivers and NiceHash QuickMiner after you setup a freshly installed Windows 10.
+
+## What can I expect from optimizations?
+We have gathered all data together and here is what you get in terms of speed, temperatures and consumption for some known popular cards:
+**Video Card - Optimization** | **Speed** | **Power consumption** | **Efficiency** | **Temperature**
+---|------------|----------|------------|----
+GeForce RTX 3090 - Medium | 116-117 MH/s | 270-280 W | 415-435 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
+GeForce RTX 3090 - Lite | 100-102 MH/s | 250-260 W | 385-410 kH/J | GPU Core: max 64 ℃<br>VRAM: max 95 ℃
+GeForce RTX 3080 - Medium | 96 MH/s | 220-240 W | 400-435 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
+GeForce RTX 3080 - Lite | 90 MH/s | 200-220 W | 410-450 kH/J | GPU Core: max 64 ℃<br>VRAM: max 95 ℃
