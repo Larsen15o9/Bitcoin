@@ -39,3 +39,7 @@ If you get error like this, then following is possible:
 ### NiceHash QuickMiner starts with Windows too quickly. Can I delay it?
 Yes, you can. Open Task Scheduler (write `Task Scheduler` in your search bar). Then follow markings from 1 to 4 from the picture below. Once you choose your wanted delay just close the dialog by pressing `OK`. Next time you are booting Windows, NiceHash QuickMiner would start with adjusted delay.
 ![Task Scheduler](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/ts_delay.png?raw=true)
+
+
+### I am using another tool for managing my video card's fans (such as MSI Afterburner) and fan speed is occasionally reset to automatic. How can I fix this?
+The problem is in default _commands.json_ file shipped with version 0.4.1.3. This file commands that all fans are reset to automatic behavior when Excavator exits. You may have some instability and Excavator is occasionally restarted. This means automatic fan profile is applied every time this happens. To prevent this, you can either modify _commands.json_ on your own or use [this one with fan reset removed](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/default_commands.json).
