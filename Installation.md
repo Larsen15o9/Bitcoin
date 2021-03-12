@@ -1,4 +1,4 @@
-Downloading and installing NiceHash QuickMiner is performed in following steps. **NEWS:** You can now use [download-installer](https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.3.2.6_RC/NiceHashQuickMinerInstaller.exe) which performs all the steps below automatically. After you install it, simply go to [the next page - running NiceHash QuickMiner for the first time](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-for-the-first-time).
+Downloading and installing NiceHash QuickMiner is performed in following steps. **NEWS:** You can now use [download-installer](https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.4.1.0_INST/NiceHashQuickMinerInstaller.exe) which performs all the steps below automatically. After you install it, simply go to [the next page - running NiceHash QuickMiner for the first time](https://github.com/nicehash/NiceHashQuickMiner/wiki/Starting-for-the-first-time).
 
 ### 1. Choosing version and downloading from GitHub
 
@@ -18,4 +18,4 @@ After that is done, you shall proceed to [running NiceHash QuickMiner for the fi
 
 ### 4. Optional: Remove previous version
 
-NiceHash QuickMiner has auto updater and will notify and install when there is new version so you do not have to manually install it again. But if for some reason, you are doing that, you have to uninstall previous version first. You can do that manually by removing all autostart tasks (remove autostart methods in QuickMiner) and removing all files or you can run `NiceHashQuickMiner.exe --uninstall --keepconfig` and everything will be done automatically for you.
+NiceHash QuickMiner has auto updater and will notify and install when there is new version so you do not have to manually install it again. But if for some reason, you are doing that, you have to uninstall previous version first. You can do that manually by removing all autostart tasks (remove autostart methods in QuickMiner) and removing all files or you can run `NiceHashQuickMiner.exe --uninstall` and everything will be done automatically for you.
