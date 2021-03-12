@@ -1,5 +1,7 @@
 ### 1. Choose your service location to improve your latency and reduce number of stale shares
 
+**IMPORTANT: From version v0.4.0.0 it is best to leave this value at `-1` (Automatic). NiceHash QuickMiner will choose best location and also swap to the next best one if your current best location is in maintenance.**
+
 Open nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`) and modify `"serviceLocation"`. Following locations are possible:
 * Europe (Belgium): `0`,
 * USA (California): `1`,
@@ -12,11 +14,11 @@ In the near future, more locations will be possible to choose from. After saving
 
 The numbers marked with red squares must be as low as possible. Experiment with serviceLocation until you get the best result.
 
-**IMPORTANT: From version v0.4.0.0 it is best to leave this value at `-1` (Automatic). NiceHash QuickMiner will choose best location and also swap to the next best one if your current best location is in maintenance.**
 
 ### 2. Change your worker name
 
 If you have more mining PCs, you can set name for each one. You can do this online through [Rig Manager](https://www.nicehash.com/my/mining/rigs) or locally through config. Open nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`) and modify `"workerName"`. Name should only contain alphanumeric characters of English alphabet and max length is 15 characters.
+
 
 ### 3. Define what happens when something goes wrong
 
@@ -35,7 +37,12 @@ We suggest you to try to set action to number `2` (Restart Excavator). If that d
 
 _Too high speed_ is defined with property `maxDeviceSpeed` which is 300 by default. This means that speed 300 MH/s is considered being too high and unreal thus some action is going to be taken to fix the error state. According to our tests, it is best to leave this value intact as it also works fine with fastest RTX 3090 cards (120 MH/s). If some day faster GPUs are introduced, then this value would have to be raised.
 
+
 ### 4. Enable logging for better troubleshooting
+
+From version 0.4.0.0 on, you can enable/disable logging with a click of a button. After that you can export all important logs into a single .ZIP file with a click of a button as well.
+
+![Logging](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/logs_enable.png?raw=true)
 
 When something does go wrong, it can be fixed in most cases, but enough information is needed. We suggest you to enable file logging when you have problems. You can do this by modifying nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`). Set `"fileLogLevel"` to `0` and also change `"launchCommandLine"` for Excavator to `"-wp 18000 -d 2 -f 0"` (note the last number changed to zero). This will enable both (NiceHash QuickMiner and Excavator full file logging). When submitting [issue here](https://github.com/nicehash/NiceHashQuickMiner/issues), it is strongly suggested to also provide these logs so the issue can be identified and resolved faster. Do not forget to **remove your personal information** from logs (such as your Mining Address) before you submit them.
 
@@ -49,13 +56,11 @@ Log level number | Log what?
 5 | fatal (FATAL)
 6 | no logging (disabled)
 
-From version 0.4.0.0 on, you can enable/disable logging with a click of a button:
-
-![Logging](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/logs_enable.png?raw=true)
 
 ### 5. Use OCTune to overclock your video cards to improve efficiency and mining income
 
 OCTune tips & tricks can be found [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune).
+
 
 ### 6. BIOS settings for larger rigs and rigs using PCIe risers
 
@@ -64,6 +69,7 @@ When you are running cards over risers, this adds extra instability factor to yo
 If one of your cards crashes during mining and you see device `ERROR` it most likely means riser instability. This is especially true, if it happens when your card is not overclocked. In this case replace riser, cable and set PCIE gen1 in BIOS.
 
 When running more than 4 video cards, you will also have to set `Above 4G decoding` to `Enabled` in your motherboard's BIOS.
+
 
 ### 7. Enable automatic updates of RC versions
 
