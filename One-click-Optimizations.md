@@ -29,6 +29,7 @@ Additional good-to-know:
 - Do not use MSI Afterburner. NiceHash QuickMiner has everything you need. MSI Afterburner can only mess with QuickMiner settings and results can be very unpredictable then.
 - Before using Optimize button, make sure you **did not set Force P0 for Cuda**. Memory overclocks will most likely be too high in that case and crash your PC.
 - Optimize was designed as an All-In-One solution. This means that you do **not need any** other tool/program but just NVIDIA drivers and NiceHash QuickMiner after you setup a freshly installed Windows 10.
+- Do not use OCTune or any other overclocking tool AND OPTIMIZE at the same time. If you have manual overclock settings (OCTune, MSI Afterburner) then choose OPTIMIZE - Manual.
 
 ## What can I expect from optimizations?
 We have gathered all data together and here is what you get in terms of speed, temperatures and consumption for some known popular cards:
