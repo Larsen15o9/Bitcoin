@@ -49,3 +49,7 @@ Yes, you can. Open Task Scheduler (write `Task Scheduler` in your search bar). T
 
 ### I am using another tool for managing my video card's fans (such as MSI Afterburner) and fan speed is occasionally reset to automatic. How can I fix this?
 The problem is in default _commands.json_ file shipped with version 0.4.1.3. This file commands that all fans are reset to automatic behavior when Excavator exits. You may have some instability and Excavator is occasionally restarted. This means automatic fan profile is applied every time this happens. To prevent this, you can either modify _commands.json_ on your own or use [this one with fan reset removed](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/default_commands.json).
+
+
+### When I try to apply OPTIMIZE profile, I get error: _Not initialized yet_. How can I solve this problem?
+In most cases, this happens if your miner is stopped and does not mine. QuickMiner needs to be mining to be able to apply OPTIMIZE profiles. If you do mine, then there is an issue getting OPTIMIZE data from GitHub servers. In this case, enable full logging and open an [issue](https://github.com/nicehash/NiceHashQuickMiner/issues), submit logs and we will take a look what can be done about it.
