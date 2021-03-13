@@ -53,3 +53,7 @@ The problem is in default _commands.json_ file shipped with version 0.4.1.3. Thi
 
 ### When I try to apply OPTIMIZE profile, I get error: _Not initialized yet_. How can I solve this problem?
 In most cases, this happens if your miner is stopped and does not mine. QuickMiner needs to be mining to be able to apply OPTIMIZE profiles. If you do mine, then there is an issue getting OPTIMIZE data from GitHub servers. In this case, enable full logging and open an [issue](https://github.com/nicehash/NiceHashQuickMiner/issues), submit logs and we will take a look what can be done about it.
+
+
+### When I start NiceHash QuickMiner, it does not mine but just idles.
+NiceHash QuickMiner goes into last state before you closed it. If you stopped mining before closing it, then it would not start mining when you turn it on again. If you wish to start mining when you start NiceHash QuickMiner, then before you close it, **do not stop mining**. If you want to start mining at Windows boot-up, then before you turn PC off or restart, do not stop mining, but rather just perform restart or shut down of your PC. Next time NiceHash QuickMiner is started, it will start mining automatically.
