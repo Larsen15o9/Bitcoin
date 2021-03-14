@@ -67,3 +67,7 @@ Microsoft Windows Defender may sometimes unjustly flag _NiceHashQuickMiner.exe_ 
 2. Under _Potentially unwanted app blocking_ make sure you have selected `Block apps` and `Block downloads`.
 3. Next time you download and/or launch NiceHash QuickMiner, you will be notified about PUA and asked to make an action. Select to _Allow on device_. You might be asked to make this action several times for multiple files.
 We appreciate your contribution towards increased positive reputation for NiceHash QuickMiner. Thank you!
+
+
+### NiceHash QuickMiner selects mining location with high ping instead of location with low ping. Automatic service location select does not work correctly.
+The algorithm works by testing each location sending and getting back response for at least 8 shares. Then the share with minimal latency is selected as latency for that location. There are currently four locations. This means, if you have only one slow video card, it may take a while to properly test all available locations (up to 15 minutes). Do not worry if you see high ping for a while - it is only testing phase. When the testing phase is over, NiceHash QuickMiner would always use location with the lowest latency. If there is maintenance at your best location, NiceHash QuickMiner would pick second best location according to measured latency. Because network conditions may change over time, this test is performed once every week.
