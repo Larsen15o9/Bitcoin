@@ -10,3 +10,4 @@ List of features that are planned for future releases of NiceHash QuickMiner (ch
 * [ ] Improved Game Mode (auto)
 * [ ] Mine on/off according to the power costs
 * [ ] Take action when no GPU device detected (no, restart, reboot, reload driver)
+* [ ] Update dialog: display changelog
