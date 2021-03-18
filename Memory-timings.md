@@ -49,7 +49,7 @@ Example of commands.json file which modifies timings for GPU0:
 
 Note: we do not have access to any private NVAPI where everything is explained. We are doing reverse engineering and these are our findings.
 
-Name | Known values | Remarks
------|--------------|----------
-__MT0 | 24, 20, 16 | GDDR5X has this value 24 or 20 (1080 Ti or 1080). Set to 16 for better performance.
-__MT1 | 6, 5, 4 | GDDR5X has this value 6 or 5 (1080 Ti or 1080). Set to 4 for better performance. Looks like being 1/4 of __MT0.
+Code Name | Real Name |Known values | Remarks
+-----|-------|-------|----------
+__MT0 | FAW? | 24, 20, 16 | GDDR5X has this value 24 or 20 (1080 Ti or 1080). Set to 16 for better performance. 
+__MT1 | RRD? | 6, 5, 4 | GDDR5X has this value 6 or 5 (1080 Ti or 1080). Set to 4 for better performance. Looks like being 1/4 of __MT0.
