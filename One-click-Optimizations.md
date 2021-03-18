@@ -43,5 +43,9 @@ GeForce RTX 3070 - Medium | 60-61 MH/s | 110-130 W | 460-550 kH/J | GPU Core: ma
 GeForce RTX 3070 - Lite | 58 MH/s | 105-120 W | 480-550 kH/J | GPU Core: max 64 ℃
 GeForce RTX 3060 Ti - Medium | 60-61 MH/s | 110-130 W | 460-550 kH/J | GPU Core: max 60 ℃
 GeForce RTX 3060 Ti - Lite | 58 MH/s | 105-120 W | 480-550 kH/J | GPU Core: max 64 ℃
+GeForce GTX 1660 SUPER - Medium | 31 MH/s | 70-80 W | 390-440 kH/J | GPU Core: max 60 ℃
+GeForce GTX 1660 SUPER - Lite | 30 MH/s | 65-75 W | 400-460 kH/J | GPU Core: max 64 ℃
+GeForce GTX 1660 - Medium | 25 MH/s | 46-56 W | 440-540 kH/J | GPU Core: max 60 ℃
+GeForce GTX 1660 - Lite | 24 MH/s | 44-54 W | 440-540 kH/J | GPU Core: max 64 ℃
 
 If you cannot reach speeds listed above, then consider [answer to the following question explained here](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ#faq08).
