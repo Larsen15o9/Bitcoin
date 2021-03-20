@@ -75,3 +75,7 @@ The algorithm works by testing each location sending and getting back response f
 
 ### When trying to apply OPTIMIZE, I get error _Not initialized yet_
 This error would appear if no data for OPTIMIZE is available. We may be constantly tuning OPTIMIZE data to better fit as much as possible cards therefore this data does not come statically with the miner but is rather downloaded and periodically updated by miner. The data is available here: https://github.com/nicehash/NiceHashQuickMiner/tree/main/optimize If QuickMiner is unable to download data, then you would get this error when trying to apply OPTIMIZE profile. Make sure that nothing is blocking GitHub and that QuickMiner can freely download data from the internet.
+
+
+### Unable to deactivate Game Mode.
+This can happen if you update NVIDIA drivers during _Game Mode_ being activated. Please, make sure to turn off NiceHash QuickMiner before you update NVIDIA drivers. Unexpected behavior can happen if drivers are updated during mining because certain important handles/values can change and then completely break functionality of the software. If you do happen to update when NiceHash QuickMiner is running, then a simple reboot of your PC will solve the issue.
