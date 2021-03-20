@@ -28,7 +28,8 @@ Scenario | Possible action | Config name | Default action
 ---------|-----------------|-------------|---------------
 Excavator shows abnormally high speed | Do nothing `1`<br>Restart Excavator `2`<br>Restart PC `3`<br>Restart driver `4` | `"whenDeviceSpeedTooHigh"` | `2`
 Excavator shows speed zero | Do nothing `1`<br>Restart Excavator `2`<br>Restart PC `3`<br>Restart driver `4` | `"whenDeviceSpeedZero"` | `2`
-
+No GPU devices detected | Do nothing `1`<br>Restart Excavator `2`<br>Restart PC `3`<br>Restart driver `4` | `"whenNoDevices"` | `1`
+ 
 When device is malfunction and not mining, Error will be displayed in [Rig Manager](https://www.nicehash.com/my/mining/rigs) as visible on the following picture.
 
 ![Device error](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/error.png?raw=true)
