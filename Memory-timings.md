@@ -3,63 +3,10 @@
 
 
 ### From version 0.4.2.0 - ability to modify certain memory timings 
+Latest NiceHash QuickMiner has support for changing memory timings in OCTune! Set it and then save so it gets loaded every time Excavator is started up.
+Download from here: https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.4.2.1_RC/NiceHash_QuickMiner_v0.4.2.1_RC.zip
 
-You can already start using this feature manually by editing _commands.json_ file. Example of _commands.json_ file which modifies timings for GPU0:
-```
-[{
-		"time": 0,
-		"commands": [{
-				"id": 1,
-				"method": "device.set.memory.timings",
-				"params": ["0", "__MT0=16", "__MT1=4"]
-			}]
-	}, {
-		"time": 20,
-		"commands": [{
-				"id": 1,
-				"method": "workers.reset.all",
-				"params": []
-			}]
-	}, {
-		"time": 30,
-		"loop": 30,
-		"commands": [{
-				"id": 1,
-				"method": "worker.print.efficiencies",
-				"params": []
-			}]
-	}, {
-		"time": 1,
-		"loop": 4,
-		"commands": [{
-				"id": 1,
-				"method": "devices.smartfan.exec",
-				"params": []
-			}]
-	}, {
-		"event": "on_quit",
-		"commands": []
-	}, {
-		"event": "on_quickminer.start",
-		"commands": []
-	}, {
-		"event": "on_quickminer.stop",
-		"commands": []
-	}]
-```
-
-
-### What we have discovered so far.
-
-Note: we do not have access to any private NVAPI where everything is explained. We are doing reverse engineering and these are our findings.
-
-Code Name | Real Name |Known values | Remarks
------|-------|-------|----------
-__MT0 | FAW | 24, 20, 16 | GDDR5X has this value 24 or 20 (1080 Ti or 1080). Set to 16 for better performance. Multiple of RRD.
-__MT1 | RRD | 6, 5, 4 | GDDR5X has this value 6 or 5 (1080 Ti or 1080). Set to 4 for better performance.
-
-### Excavator v1.6.8c build 764+ / upcoming QuickMiner (not available yet)
-Download from here: https://github.com/nicehash/excavator/releases/download/v1.6.8c/excavator_v1.6.8c_build764_Win64.zip
+Note: we do not have access to any private NVAPI where everything is explained. We are doing reverse engineering and these are our findings. What we have discovered so far is collected in the following table:
 
 Timing | Remarks
 -----|-------
