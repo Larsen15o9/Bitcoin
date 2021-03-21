@@ -59,11 +59,11 @@ __MT0 | FAW | 24, 20, 16 | GDDR5X has this value 24 or 20 (1080 Ti or 1080). Set
 __MT1 | RRD | 6, 5, 4 | GDDR5X has this value 6 or 5 (1080 Ti or 1080). Set to 4 for better performance.
 
 ### Excavator v1.6.8c build 764+ / upcoming QuickMiner (not available yet)
-Download from here: https://github.com/nicehash/excavator/releases/download/v1.6.8b/excavator_v1.6.8b_build761_Win64.zip
+Download from here: https://github.com/nicehash/excavator/releases/download/v1.6.8c/excavator_v1.6.8c_build764_Win64.zip
 
 Timing | Remarks
 -----|-------
-RC | considerable boost possible
+RC | this must be >=(RP+RAS) 
 RFC | considerable boost possible
 RAS | considerable boost possible
 RP | considerable boost possible
