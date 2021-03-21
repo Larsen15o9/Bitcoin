@@ -98,7 +98,9 @@ DELAY0 |
 Unfortunately, changing memory timings works only on Pascal series. If anyone has any tips that would leave us to make this work on Turing and Ampere... there is a 0.2 BTC bounty for this piece of information!
 
 Following cards are fully supported (tested):
+- GP100 (Tesla)
 - TITAN V
+- TITAN Xp (not tested, but most likely)
 - GTX 1080 Ti
 - GTX 1080
 
