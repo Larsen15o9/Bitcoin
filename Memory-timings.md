@@ -58,38 +58,90 @@ Code Name | Real Name |Known values | Remarks
 __MT0 | FAW | 24, 20, 16 | GDDR5X has this value 24 or 20 (1080 Ti or 1080). Set to 16 for better performance. Multiple of RRD.
 __MT1 | RRD | 6, 5, 4 | GDDR5X has this value 6 or 5 (1080 Ti or 1080). Set to 4 for better performance.
 
-Following memory timings will be available with the next version:
-```
-	{ "RC", 0, 7, 0 },    // considerable boost possible
-	{ "RFC", 0, 9, 8 },    // considerable boost possible
-	{ "RAS", 0, 7, 17 },    // considerable boost possible
-	{ "RP", 0, 7, 24 },    // considerable boost possible
-	{ "CL", 1, 6, 0 },
-	{ "WL", 1, 7, 7 },
-	{ "RD_RCD", 1, 6, 14 },
-	{ "WR_RCD", 1, 6, 20 },
-	{ "RPRE", 2, 4, 0 },
-	{ "WPRE", 2, 4, 4 },
-	{ "CDLR", 2, 7, 8 },
-	{ "WR", 2, 7, 16 },
-	{ "W2R_BUS", 2, 4, 24 },
-	{ "R2W_BUS", 2, 4, 28 },
-	{ "PDEX", 3, 5, 0 },
-	{ "PDEN2PDEX", 3, 4, 5 },
-	{ "FAW", 3, 8, 9 },    // EthEnlargementPill timing 1
-	{ "AOND", 3, 7, 17 },
-	{ "CCDL", 3, 4, 24 },
-	{ "CCDS", 3, 4, 28 },
-	{ "REFRESH_LO", 4, 3, 0 },
-	{ "REFRESH", 4, 12, 3 },    // considerable boost possible
-	{ "RRD", 4, 6, 15 },    // EthEnlargementPill timing 2
-	{ "DELAY0", 4, 6, 21 },
-	{ "ADR_MIN", 5, 3, 0 },
-	{ "WRCRC", 5, 7, 4 },
-	{ "OFFSET0", 5, 6, 12 },
-	{ "DELAY0_MSB", 5, 2, 18 },
-	{ "OFFSET1", 5, 4, 20 },
-	{ "OFFSET2", 5, 4, 24 },
-	{ "DELAY0", 5, 4, 28 }
-```
+### Excavator v1.6.8c build 764+ / upcoming QuickMiner (not available yet)
+Download from here: https://github.com/nicehash/excavator/releases/download/v1.6.8b/excavator_v1.6.8b_build761_Win64.zip
+
+Timing | Remarks
+-----|-------
+RC | considerable boost possible
+RFC | considerable boost possible
+RAS | considerable boost possible
+RP | considerable boost possible
+CL | 
+WL | 
+RD_RCD | 
+WR_RCD | 
+RPRE | 
+WPRE | 
+CDLR | 
+WR | 
+W2R_BUS | 
+R2W_BUS | 
+PDEX | 
+PDEN2PDEX | 
+FAW | EthEnlargementPill sets this to 16 (--revA sets to 20)
+AOND | 
+CCDL | 
+CCDS | 
+REFRESH_LO | 
+REFRESH | considerable boost possible
+RRD | EthEnlargementPill sets this to 4 (--revA sets to 5)
+DELAY0 | 
+ADR_MIN | 
+WRCRC | 
+OFFSET0 | 
+DELAY0_MSB | 
+OFFSET1 | 
+OFFSET2 | 
+DELAY0 | 
+
 Unfortunately, changing memory timings works only on Pascal series. If anyone has any tips that would leave us to make this work on Turing and Ampere... there is a 0.2 BTC bounty for this piece of information!
+
+Following cards are fully supported (tested):
+- TITAN V
+- GTX 1080 Ti
+- GTX 1080
+
+From this version on, simply use timing name equal value to set timing. You can set multiple of them; example to set FAW to 16 and RRD to 4:
+```
+[{
+		"time": 0,
+		"commands": [{
+				"id": 1,
+				"method": "device.set.memory.timings",
+				"params": ["0", "FAW=16", "RRD=4"]
+			}]
+	}, {
+		"time": 20,
+		"commands": [{
+				"id": 1,
+				"method": "workers.reset.all",
+				"params": []
+			}]
+	}, {
+		"time": 30,
+		"loop": 30,
+		"commands": [{
+				"id": 1,
+				"method": "worker.print.efficiencies",
+				"params": []
+			}]
+	}, {
+		"time": 1,
+		"loop": 4,
+		"commands": [{
+				"id": 1,
+				"method": "devices.smartfan.exec",
+				"params": []
+			}]
+	}, {
+		"event": "on_quit",
+		"commands": []
+	}, {
+		"event": "on_quickminer.start",
+		"commands": []
+	}, {
+		"event": "on_quickminer.stop",
+		"commands": []
+	}]
+```
