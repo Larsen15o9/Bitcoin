@@ -45,11 +45,13 @@ DELAY0 |
 Unfortunately, changing memory timings works only on Pascal series. If anyone has any tips that would leave us to make this work on Turing and Ampere... there is a 0.2 BTC bounty for this piece of information!
 
 Following cards are fully supported (tested):
-- GP100 (Tesla)
-- TITAN V
-- TITAN Xp (not tested, but most likely)
-- GTX 1080 Ti
-- GTX 1080
+GPU Model | Suggested timings
+----------|--------------
+GP100 (Tesla) | It has huge issues with TLB thrashing so you will not get much speed regardless of timings, but 1 GB DAG gives you 70+ MH/s
+TITAN V | From 68 MH/s to 76 MH/s using following: "RC=45","RFC=251","RAS=23","RP=22","RD_RCD=10","FAW=12","REFRESH_LO=7","REFRESH=10","RRD=3"
+TITAN Xp | not tested yet, but most likely works
+GTX 1080 Ti | "FAW=16","RRD=4" is equ. what EthEnlargementPill does; hint: try negative memory clock and push memory timings even lower?
+GTX 1080 | "FAW=16","RRD=4" is equ. what EthEnlargementPill does
 
 From this version on, simply use timing name equal value to set timing. You can set multiple of them; example to set FAW to 16 and RRD to 4:
 ```
