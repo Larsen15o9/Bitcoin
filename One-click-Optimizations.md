@@ -58,5 +58,7 @@ GeForce GTX 1080 Ti - Medium | 43-45 MH/s | 210 W | 205-215 kH/J | GPU Core: max
 GeForce GTX 1080 Ti - Lite | 37 MH/s | 160 W | 230 kH/J | GPU Core: max 64 ℃
 GeForce GTX 1080 - Medium | 30-31 MH/s | 130 W | 230-240 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1080 - Lite | 24 MH/s | 100 W | 240 kH/J | GPU Core: max 64 ℃
+GeForce GTX 1060 6GB - Medium | 24 MH/s | 85 W | 280 kH/J | GPU Core: max 60 ℃
+GeForce GTX 1060 6GB - Lite | 22 MH/s | 80 W | 270 kH/J | GPU Core: max 64 ℃
 
 If you cannot reach speeds listed above, then consider [answer to the following question explained here](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ#faq08).
