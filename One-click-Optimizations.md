@@ -54,7 +54,7 @@ GeForce GTX 1660 - Lite | 24 MH/s | 44-54 W | 440-540 kH/J | GPU Core: max 64 �
 From version 0.4.3.0 Pascal cards are also supported. This is currently experimental and we are still collecting data. So far the results are following:
 **Video Card - Optimization** | **Speed** | **Power consumption** | **Efficiency** | **Temperature**
 ---|------------|----------|------------|----
-GeForce GTX 1080 Ti - Medium | 42-45 MH/s | 210-230 W | 180-215 kH/J | GPU Core: max 60 ℃
+GeForce GTX 1080 Ti - Medium | 43-45 MH/s | 210 W | 205-215 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1080 Ti - Lite | 37 MH/s | 160 W | 230 kH/J | GPU Core: max 64 ℃
 GeForce GTX 1080 - Medium | 30-31 MH/s | 130 W | 230-240 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1080 - Lite | 24 MH/s | 100 W | 240 kH/J | GPU Core: max 64 ℃
