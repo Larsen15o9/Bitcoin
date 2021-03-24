@@ -62,7 +62,7 @@ GeForce GTX 1070 Ti - Medium | 31 MH/s | 125 W | 250 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1070 Ti - Lite | 29 MH/s | 110 W | 260 kH/J | GPU Core: max 64 ℃
 GeForce GTX 1070 - Medium | 29 MH/s | 140 W | 205 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1070 - Lite | 27 MH/s | 120 W | 225 kH/J | GPU Core: max 64 ℃
-GeForce GTX 1060 6GB - Medium | 23 MH/s | 90 W | 260 kH/J | GPU Core: max 60 ℃
+GeForce GTX 1060 6GB - Medium | 24 MH/s | 90 W | 260 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1060 6GB - Lite | 22 MH/s | 80 W | 270 kH/J | GPU Core: max 64 ℃
 
 If you cannot reach speeds listed above, then consider [answer to the following question explained here](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ#faq08).
