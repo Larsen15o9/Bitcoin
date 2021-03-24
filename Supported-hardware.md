@@ -1,11 +1,11 @@
 Following video cards are officially tested and fully supported:
 Device Name | Possible best hashrate* | Possible best Efficiency* | Remarks
 -------|----------|------------|-----
-NVIDIA GeForce GTX 1060 6GB | 24 MH/s | - | Force CUDA P0 state for max performance
-NVIDIA GeForce GTX 1070 | - | - | Force CUDA P0 state for max performance
-NVIDIA GeForce GTX 1070 Ti | 32 MH/s | - | Force CUDA P0 state for max performance
-NVIDIA GeForce GTX 1080 | - | - | -
-NVIDIA GeForce GTX 1080 Ti | 38 MH/s | - | -
+NVIDIA GeForce GTX 1060 6GB | 24 MH/s | - | Might modify memory timings
+NVIDIA GeForce GTX 1070 | - | - | Might modify memory timings
+NVIDIA GeForce GTX 1070 Ti | 32 MH/s | - | Might modify memory timings
+NVIDIA GeForce GTX 1080 | 32 MH/s | - | FAW=16 & RRD=4 needed
+NVIDIA GeForce GTX 1080 Ti | 45 MH/s | - | FAW=16 & RRD=4 needed
 NVIDIA TITAN Xp | - | - | -
 NVIDIA TITAN V | 75 MH/s | 580 kH/J | - | Max clock 930, 125 W
 NVIDIA GeForce GTX 1660 | 25 MH/s | 530 kH/J | Max clock 1230, Mem +600, 25 MH/s @ 48 W
