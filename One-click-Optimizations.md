@@ -37,8 +37,8 @@ We have gathered all data together and here is what you get in terms of speed, t
 ---|------------|----------|------------|----
 GeForce RTX 3090 - Medium | 116-117 MH/s | 270-280 W | 415-435 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
 GeForce RTX 3090 - Lite | 100-102 MH/s | 250-260 W | 385-410 kH/J | GPU Core: max 64 ℃<br>VRAM: max 95 ℃
-GeForce RTX 3080 - Medium | 96 MH/s | 220-240 W | 400-435 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
-GeForce RTX 3080 - Lite | 90 MH/s | 200-220 W | 410-450 kH/J | GPU Core: max 64 ℃<br>VRAM: max 95 ℃
+GeForce RTX 3080 - Medium | 96 MH/s | 210-230 W | 420-455 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
+GeForce RTX 3080 - Lite | 91 MH/s | 195-215 W | 425-460 kH/J | GPU Core: max 64 ℃<br>VRAM: max 95 ℃
 GeForce RTX 3070 - Medium | 60-61 MH/s | 110-130 W | 460-550 kH/J | GPU Core: max 60 ℃
 GeForce RTX 3070 - Lite | 58 MH/s | 105-120 W | 480-550 kH/J | GPU Core: max 64 ℃
 GeForce RTX 3060 Ti - Medium | 60-61 MH/s | 110-130 W | 460-550 kH/J | GPU Core: max 60 ℃
