@@ -25,7 +25,7 @@ You can get your NiceHash Mining Address on your [Mining page](https://www.niceh
 
 ### 4. Configure optional settings
 
-This step is not mandatory but we strongly recommend not to skip it because it can greatly improve your mining experience. You can give your rig a name - this is useful when you have more than one rig. When you name each rig, you can quickly identify when one is giving you a problems. Another important thing is to choose appropriate Service Location. Generally, if the location is closer to you, then it is better, but this is not always true. You may experiment with it and see which location is best for you. How to do this is explained [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks#1-choose-your-service-location-to-improve-your-latency-and-reduce-number-of-stale-shares).
+This step is not mandatory but we strongly recommend not to skip it because it can greatly improve your mining experience. You can give your rig a name - this is useful when you have more than one rig. When you name each rig, you can quickly identify when one is giving you a problems.
 
 ![Files](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/optsettings.png?raw=true)
 
@@ -40,18 +40,21 @@ After NiceHash QuickMiner is started, all the interaction with it is done throug
 
 You can do following actions:
 * start or stop mining,
+* view details of your rig in [Rig Manager](https://www.nicehash.com/my/mining/rigs) which gives you ability to [OPTIMIZE for mining](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimisations),
 * edit NiceHash QuickMiner config file (advanced),
 * edit Excavator Command file (advanced),
-* launch OCTune tool (explained here),
+* launch [OCTune tool](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune),
 * enable or disable CPU mining,
 * set NiceHash QuickMiner to start with Windows,
-* activate or deactivate `Game Mode` and
+* activate or deactivate [Game Mode](https://github.com/nicehash/NiceHashQuickMiner/wiki/Game-Mode),
+* access Help (this Wiki),
+* enable logging and export logs into .zip file and
 * exit.
 
 
 ### 6. Optimize your GPU with one click!
 
-**VERY IMPORTANT** Read more about it [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimisations). 
+**VERY IMPORTANT** It is strongly suggested that you perform this step. Read more about it [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimisations). 
 
 
 ### 7. Startup with Windows?
