@@ -40,7 +40,7 @@ After NiceHash QuickMiner is started, all the interaction with it is done throug
 
 You can do following actions:
 * start or stop mining,
-* view details of your rig in [Rig Manager](https://www.nicehash.com/my/mining/rigs) which gives you ability to [OPTIMIZE for mining](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimisations),
+* view details of your rig in [Rig Manager](https://www.nicehash.com/my/mining/rigs) which gives you ability to [OPTIMIZE for mining](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations),
 * edit NiceHash QuickMiner config file (advanced),
 * edit Excavator Command file (advanced),
 * launch [OCTune tool](https://github.com/nicehash/NiceHashQuickMiner/wiki/OCTune),
@@ -54,7 +54,7 @@ You can do following actions:
 
 ### 6. Optimize your GPU with one click!
 
-**VERY IMPORTANT** It is strongly suggested that you perform this step. Read more about it [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimisations). 
+**VERY IMPORTANT** It is strongly suggested that you perform this step. Read more about it [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations). 
 
 
 ### 7. Startup with Windows?
