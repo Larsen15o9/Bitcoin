@@ -1,6 +1,6 @@
 ### 1. Choose your service location to improve your latency and reduce number of stale shares
 
-**IMPORTANT: From version v0.4.0.0 it is best to leave this value at `-1` (Automatic). NiceHash QuickMiner will choose best location and also swap to the next best one if your current best location is in maintenance.**
+**IMPORTANT: From version v0.4.0.0 it is best to leave this value at `-1` (Automatic). NiceHash QuickMiner will choose best location and also swap to the next best one if your current best location is in maintenance. Please, be patient as the process of testing best location may take up to 15 minutes, depending on the mining hardware you have. During this time you may see periods of high latency which is completely normal.**
 
 Open nhqm.conf (NiceHash QuickMiner right click notification icon and choose `Settings` -> `Edit config file`) and modify `"serviceLocation"`. Following locations are possible:
 * Europe (Belgium): `0`,
