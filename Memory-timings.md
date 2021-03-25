@@ -6,7 +6,7 @@
 Latest NiceHash QuickMiner has support for changing memory timings in OCTune! Set it and then save so it gets loaded every time Excavator is started up.
 Download from here: https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.4.3.1_RC/NiceHash_QuickMiner_v0.4.3.1_RC.zip
 
-Note: we do not have access to any private NVAPI where everything is explained. We are doing reverse engineering and these are our findings. What we have discovered so far is collected in the following table:
+Note: we do not have access to any private NVAPI where everything is explained. We are doing reverse engineering and these are our findings. The only useful official documentation we got from NVIDIA regarding memory timings is their public information about [memory tweaks](https://nvidia.github.io/open-gpu-doc/MemoryTweakTable/MemoryTweakTable.html). What we have discovered so far is collected in the following table:
 
 Timing | Remarks
 -----|-------
@@ -14,10 +14,12 @@ RC | this must be >=(RP+RAS)
 RFC | considerable boost possible
 RAS | considerable boost possible
 RP | considerable boost possible
+CFG0_R0 |
 CL | 
 WL | 
 RD_RCD | 
-WR_RCD | 
+WR_RCD |
+CFG1_R0 |
 RPRE | 
 WPRE | 
 CDLR | 
@@ -34,15 +36,18 @@ REFRESH_LO |
 REFRESH | considerable boost possible
 RRD | EthEnlargementPill sets this to 4 (--revA sets to 5)
 DELAY0 | 
+CFG4_R0 |
 ADR_MIN | 
+CFG5_R0 |
 WRCRC | 
+CFG5_R1 |
 OFFSET0 | 
 DELAY0_MSB | 
 OFFSET1 | 
 OFFSET2 | 
 DELAY01 | 
 
-Unfortunately, changing memory timings works only on Pascal series. If anyone has any tips that would leave us to make this work on Turing and Ampere... there is a 0.2 BTC bounty for this piece of information!
+Unfortunately, changing memory timings works only on Pascal and Volta series. If anyone has any tips that would get us to make this work on Turing and Ampere... there is a **1 BTC bounty** for this piece of information!
 
 Following cards are fully supported (tested):
 GPU Model | Suggested timings
