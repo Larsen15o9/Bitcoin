@@ -40,7 +40,7 @@ OFFSET0 |
 DELAY0_MSB | 
 OFFSET1 | 
 OFFSET2 | 
-DELAY0 | 
+DELAY01 | 
 
 Unfortunately, changing memory timings works only on Pascal series. If anyone has any tips that would leave us to make this work on Turing and Ampere... there is a 0.2 BTC bounty for this piece of information!
 
@@ -105,39 +105,45 @@ Calling device.get or devices.get also returns actual timings for each GPU devic
 ...
 "gpu_memory_timings":
 {
-    "bEditable": false,
-    "timings": {
-        "RC": 78,
-        "RFC": 210,
-        "RAS": 52,
-        "RP": 26,
-        "CL": 24,
-        "WL": 5,
-        "RD_RCD": 26,
-        "WR_RCD": 16,
-        "RPRE": 0,
-        "WPRE": 1,
-        "CDLR": 9,
-        "WR": 27,
-        "W2R_BUS": 7,
-        "R2W_BUS": 7,
-        "PDEX": 12,
-        "PDEN2PDEX": 2,
-        "FAW": 16,
-        "AOND": 0,
-        "CCDL": 2,
-        "CCDS": 2,
-        "REFRESH_LO": 5,
-        "REFRESH": 4,
-        "RRD": 4,
-        "DELAY0": 12,
-        "ADR_MIN": 6,
-        "WRCRC": 16,
-        "OFFSET0": 39,
-        "DELAY0_MSB": 0,
-        "OFFSET1": 13,
-        "OFFSET2": 7
-    }
+  "bEditable": false,
+  "timings": {
+    "RC": 78,
+    "RFC": 210,
+    "RAS": 52,
+    "RP": 26,
+    "CFG0_R0": 0,
+    "CL": 24,
+    "WL": 5,
+    "RD_RCD": 26,
+    "WR_RCD": 16,
+    "CFG1_R0": 25,
+    "RPRE": 0,
+    "WPRE": 1,
+    "CDLR": 9,
+    "WR": 27,
+    "W2R_BUS": 7,
+    "R2W_BUS": 7,
+    "PDEX": 12,
+    "PDEN2PDEX": 2,
+    "FAW": 16,
+    "AOND": 0,
+    "CCDL": 2,
+    "CCDS": 2,
+    "REFRESH_LO": 5,
+    "REFRESH": 4,
+    "RRD": 4,
+    "DELAY0": 20,
+    "CFG4_R0": 28,
+    "ADR_MIN": 6,
+    "CFG5_R0": 0,
+    "WRCRC": 16,
+    "CFG5_R1": 0,
+    "OFFSET0": 39,
+    "DELAY0_MSB": 0,
+    "OFFSET1": 13,
+    "OFFSET2": 7,
+    "DELAY01": 12
+  }
 },
 ...
 ```
