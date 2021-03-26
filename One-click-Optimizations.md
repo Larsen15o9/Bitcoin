@@ -1,10 +1,11 @@
 # Optimize your GPU with one click!
 
-When your rig appears in [Rig Manager](https://www.nicehash.com/my/mining/rigs) you can quickly optimize mining performance by clicking button `OPTIMIZE` and then choosing among three options:
+When your rig appears in [Rig Manager](https://www.nicehash.com/my/mining/rigs) you can quickly optimize mining performance by clicking button `OPTIMIZE` and then choosing among following options:
 - **Manual:** default mode, nothing is changed, NiceHash QuickMiner does not manage your GPU,
-- **Lite:** mild optimization is applied and
-- **Medium:** average optimization is applied.
-- **Efficient:** coming with the next version of NiceHash QuickMiner!
+- **Lite:** mild optimization is applied,
+- **Medium:** average optimization is applied,
+- **High:** high optimization is applied and
+- **Efficient:** efficient optimization is applied.
 
 ![Optimisations](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/optimize_button.png?raw=true)
 
@@ -12,21 +13,21 @@ Following table explains for each GPU component what is happening. Do note that 
 
 Effect \ Optimization | **Manual** | **Lite** | **Medium** | **High** | **Efficient**
 ---|------------|----------|------------|----|----
-GPU Core Clock | Stock frequency | Low frequency | Medium frequency | _coming<br>soon_ | Low-Medium frequency
-GPU Vcore | Stock voltage | Stock voltage | Stock voltage | _coming<br>soon_ | **Undervolted**
-VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | _coming<br>soon_ | Moderately increased frequency
-VRAM Timings | Stock timings | Stock timings | Stock timings | _coming<br>soon_ | **Modified**
-Fan Speeds | GPU Default | Keep GPU* below 65 ℃ | Keep GPU* below 60 ℃ | _coming<br>soon_ | Keep GPU* below 65 ℃
-Temperatures | Very high | Very low | Low | _coming<br>soon_ | Low
-Power consumption | Very high | Very low | Low | _coming<br>soon_ | Very low
-Mining Speed | Low | Medium | Medium-High | _coming<br>soon_ | Medium-High 
-**Efficiency** | **Poor** | **Good** | **Good** | _coming<br>soon_ | **Excellent**
+GPU Core Clock | Stock frequency | Low frequency | Medium frequency | Medium-High frequency | Low-Medium frequency
+GPU Vcore | Stock voltage | Stock voltage | Stock voltage | Stock voltage | **Undervolted**
+VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | High frequency | Moderately increased frequency
+VRAM Timings | Stock timings | Stock timings | Stock timings | Stock timings | **Modified**
+Fan Speeds | GPU Default | Keep GPU* below 65 ℃ | Keep GPU* below 60 ℃ | Keep GPU* below 60 ℃ | Keep GPU* below 65 ℃
+Temperatures | Very high | Low | Low | Low | Low
+Power consumption | Very high | Very low | Low | Low-Moderate | Very low
+Mining Speed | Low | Medium | Medium-High | High | Medium-High 
+**Efficiency** | **Poor** | **Good** | **Good** | **Good** | **Excellent**
 
 _* For RTX 3080 and RTX 3090 also keep VRAM Tjunction temperature below 95 ℃._
 
 With version 0.4.4.0 **Efficient OPTIMIZATION** is available for certain video cards. This optimization gives you almost the highest possible efficiency using various tuning mechanisms including adjusting memory timings and setting under-voltages. It may not work on all cards, but we are trying to set parameters to fit most of the cards. **Efficient OPTIMIZATION** will be first available for Pascal (1000 series) and Volta cards. Later we will try to offer good profiles for Turing (2000 series) and Ampere (3000 series) based cards.
 
-Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the near future to offer you even better performance and efficiency. To get latest optimization applied for your GPU, you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_003.json) that is being used. Medium optimization may not work for all cards. We are working on Lite optimization to be able to work for 99.9% of all video cards.
+Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the near future to offer you even better performance and efficiency. To get latest optimization applied for your GPU, you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_005.json) that is being used. Medium, High and Efficient optimizations may not work for all cards. We are working on Lite optimization to be able to work for 99.9% of all video cards.
 
 **WARNING:** Optimization applies overclock to your card which means that your card is running with clocks that were not set by NVIDIA. This means that your card may not be stable. It is strongly suggested to try Lite optimization first and test it for a day. If everything works okay, then try Medium. Also, do not enable Autostart with Windows before you finish performing optimizations. It can happen that you get caught in an endless restart loop because NiceHash QuickMiner applies overclocks at the start and can cause immediate crash of your system if clocks are too high for your system. In that case, unplugging internet connection for the boot time may help because optimization data cannot be downloaded and Excavator cannot mine until it gets data from the servers.
 
@@ -75,9 +76,9 @@ If you cannot reach speeds listed above, then consider [answer to the following 
 
 ## Is it possible to slightly modify OPTIMIZATION profiles?
 From version 0.4.3.0 this is possible. Steps are following:
-1. Download appropriate Optimization data file (currently this is [v4](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_004.json)) and save it somewhere on your hard drive. Let's assume location we save it into is `D:\nhqm\optimize\data_004.json`.
-2. In config file _nhqm.conf_ modify `"optimizeProfilesCustomDataURL" : null` to `"optimizeProfilesCustomDataURL" : "D:\\nhqm\\optimize\\data_004.json"`. Be aware of **the double backslashes** - if you use single, the whole config file gets corrupted and new one is generated. Here you can also use your own HTTPS URL to replace the GitHub's default one. If set to null, then default hardcoded URL is used which is regularly maintained by NiceHash team to offer best possible performance and reliability for most of the cards.
-3. Modify `D:\nhqm\optimize\data_004.json` file. From version 3, property names are much shortened, but are still the same as used in [version 2](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json). Some can be figured by looking at examples. `pt` (profile type) 1 has several extra properties:
+1. Download appropriate Optimization data file (currently this is [v4](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_005.json)) and save it somewhere on your hard drive. Let's assume location we save it into is `D:\nhqm\optimize\data_005.json`.
+2. In config file _nhqm.conf_ modify `"optimizeProfilesCustomDataURL" : null` to `"optimizeProfilesCustomDataURL" : "D:\\nhqm\\optimize\\data_005.json"`. Be aware of **the double backslashes** - if you use single, the whole config file gets corrupted and new one is generated. Here you can also use your own HTTPS URL to replace the GitHub's default one. If set to null, then default hardcoded URL is used which is regularly maintained by NiceHash team to offer best possible performance and reliability for most of the cards.
+3. Modify `D:\nhqm\optimize\data_005.json` file. From version 3, property names are much shortened, but are still the same as used in [version 2](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json). Some can be figured by looking at examples. `pt` (profile type) 1 has several extra properties:
   * `dcc` is delta core clock,
   * `pl` is power limit in Watts and
   * `mt` is memory timings array.
