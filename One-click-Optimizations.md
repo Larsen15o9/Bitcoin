@@ -4,24 +4,29 @@ When your rig appears in [Rig Manager](https://www.nicehash.com/my/mining/rigs) 
 - **Manual:** default mode, nothing is changed, NiceHash QuickMiner does not manage your GPU,
 - **Lite:** mild optimization is applied and
 - **Medium:** average optimization is applied.
+- **Efficient:** coming with the next version of NiceHash QuickMiner!
+
 ![Optimisations](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/optimize_button.png?raw=true)
 
 Following table explains for each GPU component what is happening. Do note that this table is very generalized and that each GPU might behave slightly differently.
 
-Effect \ Optimization | **Manual** | **Lite** | **Medium** | **High**
----|------------|----------|------------|----
-GPU Core Clock | Stock frequency | Very low frequency | Low frequency | _coming<br>soon_
-GPU Vcore | Stock voltage | Stock voltage | Stock voltage | _coming<br>soon_
-VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | _coming<br>soon_
-Fan Speeds | GPU Default | Keep GPU* below 65 ℃ | Keep GPU* below 60 ℃ | _coming<br>soon_
-Temperatures | Very high | Very low | Low | _coming<br>soon_
-Power consumption | Very high | Very low | Low | _coming<br>soon_
-Mining Speed | Low | Medium-High | High | _coming<br>soon_
-**Efficiency** | **Poor** | **Good** | **Very good** | _coming<br>soon_
+Effect \ Optimization | **Manual** | **Lite** | **Medium** | **High** | **Efficient**
+---|------------|----------|------------|----|----
+GPU Core Clock | Stock frequency | Low frequency | Medium frequency | _coming<br>soon_ | Low-Medium frequency
+GPU Vcore | Stock voltage | Stock voltage | Stock voltage | _coming<br>soon_ | **Undervolted**
+VRAM Clock | Stock frequency | Mildly increased frequency | Moderately increased frequency | _coming<br>soon_ | Moderately increased frequency
+VRAM Timings | Stock timings | Stock timings | Stock timings | _coming<br>soon_ | **Modified**
+Fan Speeds | GPU Default | Keep GPU* below 65 ℃ | Keep GPU* below 60 ℃ | _coming<br>soon_ | Keep GPU* below 65 ℃
+Temperatures | Very high | Very low | Low | _coming<br>soon_ | Low
+Power consumption | Very high | Very low | Low | _coming<br>soon_ | Very low
+Mining Speed | Low | Medium | Medium-High | _coming<br>soon_ | Medium-High 
+**Efficiency** | **Poor** | **Good** | **Good** | _coming<br>soon_ | **Excellent**
 
 _* For RTX 3080 and RTX 3090 also keep VRAM Tjunction temperature below 95 ℃._
 
-Optimization feature is only available for RTX 2000 series, RTX 3000 series, GTX 1660, GTX 1660 Ti, GTX 1660 Super, TITAN V and TITAN RTX. **UPDATE!** With version 0.4.3.0 also other cards are supported! Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the near future to offer you even better performance and efficiency. To get latest optimization applied for your GPU, you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_003.json) that is being used. Medium optimization may not work for all cards. We are working on Lite optimization to be able to work for 99.9% of all video cards.
+With version 0.4.4.0 **Efficient OPTIMIZATION** is available for certain video cards. This optimization gives you almost the highest possible efficiency using various tuning mechanisms including adjusting memory timings and setting under-voltages. It may not work on all cards, but we are trying to set parameters to fit most of the cards. **Efficient OPTIMIZATION** will be first available for Pascal (1000 series) and Volta cards. Later we will try to offer good profiles for Turing (2000 series) and Ampere (3000 series) based cards.
+
+Do note that we are constantly trying to improve these optimizations which requires a lot of testing and performance measurements. Our numbers will surely improve in the near future to offer you even better performance and efficiency. To get latest optimization applied for your GPU, you only have to restart NiceHash QuickMiner. You can also view [latest raw data](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_003.json) that is being used. Medium optimization may not work for all cards. We are working on Lite optimization to be able to work for 99.9% of all video cards.
 
 **WARNING:** Optimization applies overclock to your card which means that your card is running with clocks that were not set by NVIDIA. This means that your card may not be stable. It is strongly suggested to try Lite optimization first and test it for a day. If everything works okay, then try Medium. Also, do not enable Autostart with Windows before you finish performing optimizations. It can happen that you get caught in an endless restart loop because NiceHash QuickMiner applies overclocks at the start and can cause immediate crash of your system if clocks are too high for your system. In that case, unplugging internet connection for the boot time may help because optimization data cannot be downloaded and Excavator cannot mine until it gets data from the servers.
 
