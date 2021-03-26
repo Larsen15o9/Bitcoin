@@ -11,7 +11,7 @@ When your rig appears in [Rig Manager](https://www.nicehash.com/my/mining/rigs) 
 
 Following table explains for each GPU component what is happening. Do note that this table is very generalized and that each GPU might behave slightly differently.
 
-Effect \ Optimization | **Manual** | **Lite** | **Medium** | **High** | **Efficient**
+Effect | **Manual** | **Lite** | **Medium** | **High** | **Efficient**
 ---|------------|----------|------------|----|----
 GPU Core Clock | Stock frequency | Low frequency | Medium frequency | Medium-High frequency | Low-Medium frequency
 GPU Vcore | Stock voltage | Stock voltage | Stock voltage | Stock voltage | **Undervolted**
