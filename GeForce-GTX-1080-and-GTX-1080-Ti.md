@@ -1,4 +1,4 @@
-# How to get a good speed with GeForce GTX 1080 (Ti)?
+# How to get a good speed with GeForce GTX 1080 (Ti)? ~45 MH/s!!!
 
 1. Download latest release from [here](https://github.com/nicehash/NiceHashQuickMiner/releases).
 2. Install or unzip.
@@ -16,3 +16,8 @@
 8. You can control each mining device - start or stop it and apply [mining optimization profiles](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations).
 9. Select optimization that you prefer. Boom! Your GeForce GTX 1080 or GTX 1080 Ti will suddenly hash much faster. **Up to 32 MH/s is expected for GeForce GTX 1080 and up to 45 MH/s for GeForce GTX 1080 Ti**, depending on optimization selected.
 10. Selected optimization is automatically saved and will be loaded next time you launch NiceHash QuickMiner. When you quit NiceHash QuickMiner, mining optimization is removed. You do not have to use any OC tools at all.
+
+### Troubleshooting
+***
+### Not getting expected speed?
+Is your GPU primary GPU with display connected? Then [read here](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ#-7-does-having-display-connected-to-the-video-card-have-any-effect-on-performance).
