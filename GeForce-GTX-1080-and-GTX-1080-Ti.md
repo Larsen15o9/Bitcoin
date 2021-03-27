@@ -1,4 +1,4 @@
-# How to get a good speed with GeForce GTX 1080 or GTX 1080 Ti?
+# How to get a good speed with GeForce GTX 1080 (Ti)?
 
 1. Download latest release from [here](https://github.com/nicehash/NiceHashQuickMiner/releases).
 2. Install or unzip.
