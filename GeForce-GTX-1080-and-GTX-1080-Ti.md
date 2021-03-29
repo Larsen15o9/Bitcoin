@@ -8,7 +8,7 @@
 
 ![Mining Address](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/miningaddr.png?raw=true)
 
-6. Next dialog is optional and you can skip it, but we suggest not to - set name of your worker and error handling mechanism. Do not enable start with Windows before you select your mining optimization profile (next step) - you have to test your optimization first!
+6. Next dialog is optional and you can skip it, but we suggest not to - set name of your worker and error handling mechanism. Do not enable start with Windows before you select your mining optimization profile (next step) - you have to test stability of your optimization first!
 7. At the end, go to the [Rig Manager](https://www.nicehash.com/my/mining/rigs) again where you should see your mining Rig. Click on it and a list of mining devices will be displayed.
 
 ![Optimize](https://github.com/nicehash/NiceHashQuickMiner/raw/main/images/optimize_button.png?raw=true)
