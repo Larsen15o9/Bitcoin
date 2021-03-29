@@ -4,7 +4,7 @@
 
 ### From version 0.4.2.0 - ability to modify certain memory timings 
 Latest NiceHash QuickMiner has support for changing memory timings in OCTune! Set it and then save so it gets loaded every time Excavator is started up.
-Download from here: https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.4.4.0_RC/NiceHash_QuickMiner_v0.4.4.0_RC.zip
+Download from here: https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.4.5.0_RC/NiceHash_QuickMiner_v0.4.5.0_RC.zip
 
 Note: we do not have access to any private NVAPI where everything is explained. We are doing reverse engineering and these are our findings. The only useful official documentation we got from NVIDIA regarding memory timings is their public information about [memory tweaks](https://nvidia.github.io/open-gpu-doc/MemoryTweakTable/MemoryTweakTable.html). What we have discovered so far is collected in the following table:
 
