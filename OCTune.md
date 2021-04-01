@@ -1,6 +1,5 @@
-**IMPORTANT!** From version 0.4.5.0, you need to provide auth token when operating with OCTune to modify settings (write access). If no auth token or invalid auth token is provided, then GPU stats can only be viewed and not modified (read access). Auth token is saved in _nhqm.conf_ as `"watchDogAPIAuth"`. Complete URL is automatically created if you open OCTune using NiceHash QuickMiner taskbar tray context menu and choosing OCTune.
-
-![octuneurl](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/octuneurl1.png?raw=true)
+> **IMPORTANT!** From version 0.4.5.0, you need to provide auth token when operating with OCTune to modify settings (write access). If no auth token or invalid auth token is provided, then GPU stats can only be viewed and not modified (read access). Auth token is saved in _nhqm.conf_ as `"watchDogAPIAuth"`. Complete URL is automatically created if you open OCTune using NiceHash QuickMiner taskbar tray context menu and choosing OCTune.
+> ![octuneurl](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/octuneurl1.png?raw=true)
 
 ## Index
 [1. Finding most efficient or the fastest combination of OC values for your card(s) - classic long path](#count01)<br>
