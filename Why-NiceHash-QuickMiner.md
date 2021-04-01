@@ -20,8 +20,9 @@ Now you know the difference between NiceHash Miner and NiceHash QuickMiner. At t
 * Windows autostart methods.
 * Automatic updates.
 * No developer fees. There is only NiceHash 2% pool-side fee with PPS (pay-per-share) payout scheme.
-* Powerful and reliable one-click-optimisations for GTX 1660 and RTX series cards.
+* Powerful and reliable one-click-optimisations.
 * Game Mode to quickly switch between mining and gaming.
+* Advanced [security mechanisms](https://github.com/nicehash/NiceHashQuickMiner/wiki/Security-Mechanisms).
 
 # Drawbacks. Why it is better to use NiceHash Miner or NiceHash OS?
 - NiceHash QuickMiner mines **only** daggerhashimoto (ethereum). There is no algorithm switching so there is no chance for extra above-ethereum payrate that may come occasionally. The amount being lost depends on your GPU Model, but currently, it may be only up to several percentage.
