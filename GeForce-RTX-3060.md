@@ -1,4 +1,4 @@
-### GeForce GTX 3060
+### GeForce RTX 3060
 
 Due to obvious reasons we cannot share NVIDIA drivers 470.05. But we want to keep you safe still when searching for these. **Always verify hash checksum before running any executable.** How to do it, you can [read here](https://github.com/nicehash/NiceHashQuickMiner/tree/main/checksums). We are providing SHA256 and SHA1 for NVIDIA drivers so you can make sure you have the authentic file from NVIDIA and not a malicious one.
 
