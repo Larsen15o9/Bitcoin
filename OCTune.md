@@ -92,8 +92,12 @@ For 2000 series cards, I believe you can use values written for 3060 Ti and 3070
 
 
 ## <a name="count04"></a> 4. Access OCTune in LAN or VPN
-
-From version 0.4.1.2 you can configure OCTune to be accessible over LAN or VPN thus getting access to local Excavator from remote computer. You can can enable this by performing following modifications:
+You can configure OCTune to be accessible over LAN or VPN thus getting access to local Excavator from remote computer. You can can enable this by performing following modifications:
+### Version 0.4.5.0 and above
+1. Determine local IP of the mining rig - for example, we assume the IP is _192.168.1.22_.
+2. Edit config file `nhqm.conf`; change `"watchDogAPIHost" : "localhost"` to `"watchDogAPIHost" : "192.168.1.22"`.
+3. Restart NiceHash QuickMiner. Open OCTune via NiceHash QuickMiner context menu. The URL displayed in the browser bar can be used on other machines in LAN and have full access to OCTune. If no `auth` token is provided, then only read-access is provided.
+### Version 0.4.1.3
 1. Determine local IP of the mining rig - for example, we assume the IP is _192.168.1.22_.
 2. Edit config file `nhqm.conf`; change `"watchDogAPIHost" : "localhost"` to `"watchDogAPIHost" : "192.168.1.22"`.
 3. Edit config file `nhqm.conf`; find `"launchCommandLine"`. By default, this string has value `"-qx -qm -wp 18000 -d 2 -f 6"`. Add `-wi 192.168.1.22` so the modification is then: `"launchCommandLine" : "-qx -qm -wp 18000 -d 2 -f 0 -wi 192.168.1.22"`.
