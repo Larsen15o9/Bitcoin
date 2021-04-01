@@ -17,4 +17,4 @@ This wiki contains all the information you need and you might need in the future
 
 When you want to know more, I suggest spending 10 minutes to read [something more about mining](https://github.com/nicehash/NiceHashQuickMiner/wiki/Hashing-speed,-accepted-rejected-speed-and-shares).
 
-**If you are worried about security, read here about security mechanisms used for NiceHash QuickMiner.**
+**If you are worried about security, read [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Security-Mechanisms) about security mechanisms used for NiceHash QuickMiner.**
