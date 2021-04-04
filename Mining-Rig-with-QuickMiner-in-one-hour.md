@@ -34,6 +34,7 @@ In BIOS, if you are using more than 3 GPUs and/or at least one is connected usin
 * Find settings for PCIe link. Every slot that uses USB-riser needs to have this configured to either **PCIe Gen1** or **PCIe Gen2**. Higher Gen (Generation, or version) means higher speed. USB risers are not designed with high speeds in mind - rarely can work with Gen3 (forget about Gen4), so we suggest you to set it to Gen2. Gen1 could be even better, but some devices can have compatibility issues with Gen1. With our experiences so far, Gen2 is most likely to work fine.
 * Set BIOS to UEFI boot only (disable CSM or legacy) - this will give you the least amount of issues with GPU detection.
 * Set appropriate primary GPU. If your motherboard/CPU have integrated GPU, we suggest you to enable it and set it as primary GPU, then plug monitor cable (HDMI/DP) to the motherboard. [Rendering display reduces hashrate](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ#faq07) so it is best to use dedicated GPU for rendering display if possible.
+* Set action when power loss occurs - set to turn on (or last state). In this case, when power is lost and it comes back, your Rig turns on automatically.
 
 With the above settings, your Rig should support up to 13 GPUs without any issues.
 
@@ -53,3 +54,11 @@ Start QuickMiner and go to the [Rig Manager](https://www.nicehash.com/my/mining/
 When you find stable combination of Optimization profiles for all GPUs, **enable option to start QuickMiner with Windows**.
 
 ## 8. Enjoy perfect mining optimization with full reliability and zero maintenance needed
+Your Rig will be fully self-maintained:
+* If power is lost, your motherboard's BIOS take care to turn Rig back on. When Windows is started, NiceHash QuickMiner is also started which automatically turns on mining.
+* If any of your GPUs crash, freeze, stop working then NiceHash QuickMiner will perform reboot of the rig. After reboot, everything is loaded from zero automatically as in previous example.
+* When Windows is updated, after restart, mining continues as before (due to start with Windows feature).
+
+There is only one feature that needs small amount of human-maintenance and that is NiceHash QuickMiner updates (and NVIDIA driver updates), but these are fairly simple (just clicking `OK` two times). Therefore we suggest you to check display every few days and perform update if available.
+
+For everything else, monitoring your rig through [Rig Manager](https://www.nicehash.com/my/mining/rigs) using website or your mobile phone is enough. You can see up to 7 days past statistics of accepted speed, rejects and profitability and even perform some maintenance (such as rebooting rig remotely). More features will be added in the near future.
