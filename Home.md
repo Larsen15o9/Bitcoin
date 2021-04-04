@@ -14,6 +14,7 @@ This wiki contains all the information you need and you might need in the future
 * Details about fantastic `OPTIMIZE` feature are [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations).
 * What is Game Mode and how to use it is explained [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Game-Mode).
 * **NEW!!!** Support for adjusting memory timings explained [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Memory-timings).
+* **NEW!!!** Fast start your mining Rig with QuickMiner - less than 1 hour to fully reliable optimized mining with [detailed step by step guide](https://github.com/nicehash/NiceHashQuickMiner/wiki/Mining-Rig-with-QuickMiner-in-one-hour).
 
 When you want to know more, I suggest spending 10 minutes to read [something more about mining](https://github.com/nicehash/NiceHashQuickMiner/wiki/Hashing-speed,-accepted-rejected-speed-and-shares).
 
