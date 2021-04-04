@@ -4,7 +4,7 @@
 ## Index
 [1. Finding most efficient or the fastest combination of OC values for your card(s) - classic long path](#count01)<br>
 [2. Alternative overclocking explained](#count02)<br>
-[3. Autotune (experimental from v0.3.0.5) - very fast automatic OC tuning - 95% max efficiency guaranteed within 5 minutes!](#count03)<br>
+[3. **EXPERIMENTAL** Autotune  - very fast automatic OC tuning - 95% max efficiency guaranteed within 5 minutes!](#count03)<br>
 [4. Access OCTune in LAN or VPN](#count04)<br>
 
 ## <a name="count01"></a> 1. Finding most efficient or the fastest combination of OC values for your card(s)
@@ -73,7 +73,7 @@ GPU Model | Absolute memory clock | Core clock limit | Power consumption (W) | S
 3090 | 10401 | 1080 | 286 | 117 | 411
 
 
-## <a name="count03"></a> 3. Autotune (experimental from v0.3.0.5+)
+## <a name="count03"></a> 3. **EXPERIMENTAL** Autotune
 
 Autotune takes user's input - `Memory clock (absolute)` and determines optimal `Core clock limit` so you get **best speed or efficiency**. The result could still be further tweaked for perhaps additional 1% of performance or efficiency, but considering that **Autotune** does everything automatically and very fast (just one iteration through viable core clock limits simultaneously testing for performance), there is serious question whether additional tweaking is even worth your time.
 
