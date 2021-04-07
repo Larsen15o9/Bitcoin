@@ -41,6 +41,8 @@ Additional good-to-know:
 We have gathered all data together and here is what you get in terms of speed, temperatures and consumption for some known popular cards:
 **Video Card - Optimization** | **Speed** | **Power consumption** | **Efficiency** | **Temperature**
 ---|------------|----------|------------|----
+GeForce RTX 3090 - Extreme<br>**Only for water cooled GPU!** | 125 MH/s | 290-310 W | 405-435 kH/J | GPU Core: max 50 ℃<br>VRAM: max 80 ℃
+GeForce RTX 3090 - High | 121-122 MH/s | 280-290 W | 415-435 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
 GeForce RTX 3090 - Medium | 116-117 MH/s | 270-280 W | 415-435 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
 GeForce RTX 3090 - Lite | 100-102 MH/s | 250-260 W | 385-410 kH/J | GPU Core: max 64 ℃<br>VRAM: max 95 ℃
 GeForce RTX 3080 - Medium | 96 MH/s | 210-230 W | 420-455 kH/J | GPU Core: max 60 ℃<br>VRAM: max 95 ℃
