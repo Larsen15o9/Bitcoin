@@ -6,6 +6,7 @@ NVIDIA GeForce GTX 1070 | 29 MH/s | - | Might modify memory timings
 NVIDIA GeForce GTX 1070 Ti | 32 MH/s | - | Might modify memory timings
 NVIDIA GeForce GTX 1080 | 32 MH/s | - | FAW=16 & RRD=4 needed
 NVIDIA GeForce GTX 1080 Ti | 45 MH/s | - | FAW=16 & RRD=4 needed
+NVIDIA TITAN X (Pascal) | 45 MH/s | - | FAW=16 & RRD=4 needed
 NVIDIA TITAN Xp | 46 MH/s | - | FAW=16 & RRD=4 needed
 NVIDIA TITAN V | 75 MH/s | 580 kH/J | - | Max clock 930, 125 W
 NVIDIA GeForce GTX 1660 | 25 MH/s | 530 kH/J | Max clock 1230, Mem +600, 25 MH/s @ 48 W
