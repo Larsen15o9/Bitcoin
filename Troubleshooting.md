@@ -10,13 +10,13 @@ This can cause mining failure. Increase your Virtual Memory size to at least 600
 
 
 ### Excavator WARNING Device #X-X could not obtain power consumption!
-Excavator is not capable of getting information about power consumption, therefore some functionality may not work (correctly). Fully reinstall your NVIDIA drivers to fix this issue. From version 0.4.1.3, this issue has been fixed and it shall not appear anymore.
+Excavator is not capable of getting information about power consumption, therefore some functionality may not work (correctly). Fully reinstall your NVIDIA drivers to fix this issue. From version 0.4.1.3, this issue has been fixed and it shall not appear anymore. Certain laptops may give you this warning - there is no solution because power management on some laptops is not available at all.
 
 
 ### Poor performance on GTX 1060, 1070 (Ti), 1080 (Ti).
-You need to make sure, your card is running in P0 state. This can be achieved using some 3rd party tools as suggested in [this Reddit thread](https://www.reddit.com/r/RenderToken/comments/9w2rd9/how_to_use_maximum_p0_power_state_with_nvidia/).
+Make sure to update to the latest version of QuickMiner and experiment with different [OPTIMIZE profiles](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations). Not all may work for you, but you shall find at least one that would give you satisfying results.
 
-Additionally, GTX 1080 and GTX 1080 Ti have GDDR5X memory which needs different memory timings for better performance. There is no publicly available code to do that, there are only closed source protected binaries of EthEnlargmentPill from unknown authors, which I do NOT suggest to use if you have any sensitive information.
+Do not use EthEnlargementPill and do not force CUDA to P0 state - that is not needed with latest version and would only break things apart. If you would like to further tune OC settings, you should do so by changing [memory timings](https://github.com/nicehash/NiceHashQuickMiner/wiki/Memory-timings). You may reach considerable speed improvements doing so.
 
 
 ### When I do CPU mining, my CPU isn't fully loaded.
