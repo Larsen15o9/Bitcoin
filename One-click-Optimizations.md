@@ -62,14 +62,18 @@ GeForce GTX 1660 - Lite | 24 MH/s | 44-54 W | 440-540 kH/J | GPU Core: max 64 �
 From version 0.4.3.0 Pascal cards are also supported. This is currently experimental and we are still collecting data. So far the results are following:
 **Video Card - Optimization** | **Speed** | **Power consumption** | **Efficiency** | **Temperature**
 ---|------------|----------|------------|----
+GeForce GTX 1080 Ti - High | 45-46 MH/s | 210 W |  | GPU Core: max 60 ℃
 GeForce GTX 1080 Ti - Medium | 43-45 MH/s | 210 W | 205-215 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1080 Ti - Lite | 37 MH/s | 160 W | 230 kH/J | GPU Core: max 64 ℃
+GeForce GTX 1080 - High | 33-34 MH/s | 140 W |  | GPU Core: max 60 ℃
 GeForce GTX 1080 - Medium | 30-31 MH/s | 130 W | 230-240 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1080 - Lite | 25 MH/s | 100 W | 240 kH/J | GPU Core: max 64 ℃
 GeForce GTX 1070 Ti - Medium | 31 MH/s | 125 W | 250 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1070 Ti - Lite | 29 MH/s | 110 W | 260 kH/J | GPU Core: max 64 ℃
-GeForce GTX 1070 - Medium | 29 MH/s | 140 W | 205 kH/J | GPU Core: max 60 ℃
-GeForce GTX 1070 - Lite | 27 MH/s | 120 W | 225 kH/J | GPU Core: max 64 ℃
+GeForce GTX 1070 - High | 28 MH/s | 120 W |  | GPU Core: max 60 ℃
+GeForce GTX 1070 - Medium | 27 MH/s | 110 W |  | GPU Core: max 60 ℃
+GeForce GTX 1070 - Lite | 26 MH/s | 100 W |  | GPU Core: max 64 ℃
+GeForce GTX 1060 6GB - High | 25 MH/s | 100 W |  | GPU Core: max 60 ℃
 GeForce GTX 1060 6GB - Medium | 24 MH/s | 90 W | 260 kH/J | GPU Core: max 60 ℃
 GeForce GTX 1060 6GB - Lite | 22 MH/s | 80 W | 270 kH/J | GPU Core: max 64 ℃
 
