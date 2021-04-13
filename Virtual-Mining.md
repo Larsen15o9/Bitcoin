@@ -30,7 +30,7 @@ We will shortly provide you with guides how to establish QuickMiner for various 
 
 
 ### BIOS preparation
-<TODO>
+TODO
 
 ### Host OS preparation
 1. Install [Bare Metal Hypervisor: VMware ESXi](https://www.vmware.com/products/esxi-and-esx.html) on your rig. This Host OS has 90-day free trial.
