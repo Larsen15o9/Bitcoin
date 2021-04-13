@@ -65,4 +65,7 @@ and
 17. Configuration of virtual machine is complete. Additionally you may configure whether virtual machine is automatically started with the Host.
 
 
-### Driver installation and tweaks
+### Driver installation and final tweaks
+20. In guest Windows OS, download and install latest non-DCH NVIDIA drivers (at least version [465.89](https://www.nvidia.com/download/driverResults.aspx/172060/en-us)).
+21. **Following step is very important to improve stability of your virtual miner. Without this tweak, your mining rig may not be stable even 5 minutes!** You need to [set Message Signaled-Based Interrupts](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/) (MSI) for your video cards. You can do it manually changing Windows Registry or using 3rd party tool provided by the author of the article. After modifying Registry values, make the final reboot of the virtual machine. Your virtual miner is now ready for QuickMiner.
+22. Download, install, configure and mine using [latest version of NiceHash QuickMiner](https://github.com/nicehash/NiceHashQuickMiner/releases) which is fully supported and compatible with virtualization-techniques.
