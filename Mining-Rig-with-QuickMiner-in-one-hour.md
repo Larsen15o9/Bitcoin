@@ -48,12 +48,15 @@ Right after booting into Windows, it is recommended to check Device Manager and 
 
 Once installation of drivers is finished, you can use GPU-Z again to verify whether it has been completed successfully. GPU-Z will also show driver version. Here, it may happen, that Windows install old drivers instead of new ones. In that case, run NVIDIA driver installer as you did in step 2 again and keep doing it until you have latest drivers installed and all devices have all features enabled (checkboxes are checked). Then perform final reboot and once you get back into Windows, GPU-Z should display appropriate driver version with all checkboxes checked for all cards. At this point you know that driver installation was fully successful.
 
-## 7. Launch QuickMiner and optimize for mining
+## 7. Extra tuning step(s) - mandatory for max stability
+It is strongly suggested to set all your GPUs to use MSI-X as instructed [here](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/). Enabling MSI-X will increase stability and reliability of your GPUs and make them crash less dramatically when crashing (without MSI-X, when one card crashes, whole rig crashes after few seconds resulting in bluescreen in most cases).
+
+## 8. Launch QuickMiner and optimize for mining
 Start QuickMiner and go to the [Rig Manager](https://www.nicehash.com/my/mining/rigs). Set all devices to use `Lite` Optimization. Leave it for 10 minutes and observe Excavator console window. If you do not see Excavator crashing and restarting, and you don't see any hardware errors, set all devices to `Medium` or `Efficient` (or any other Optimize profile you prefer). If you notice Excavator crashing or hardware errors appearing, set one less profile (eg, if `High`, set `Medium`, if `Medium`, set `Lite`) and reboot the Rig.
 
 When you find stable combination of Optimization profiles for all GPUs, **enable option to start QuickMiner with Windows**.
 
-## 8. Enjoy perfect mining optimization with full reliability and zero maintenance needed
+## 9. Enjoy perfect mining optimization with full reliability and zero maintenance needed
 Your Rig will be fully self-maintained:
 * If power is lost, your motherboard's BIOS take care to turn Rig back on. When Windows is started, NiceHash QuickMiner is also started which automatically turns on mining.
 * If any of your GPUs crash, freeze, stop working then NiceHash QuickMiner will perform reboot of the rig. After reboot, everything is loaded from zero automatically as in previous example.
