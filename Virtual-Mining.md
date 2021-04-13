@@ -28,12 +28,17 @@ We will shortly provide you with guides how to establish QuickMiner for various 
 
 **WARNING: Incomplete instructions! Work in progress...**
 
+
+### BIOS preparation
+
+
 ### Host OS preparation
 1. Install [Bare Metal Hypervisor: VMware ESXi](https://www.vmware.com/products/esxi-and-esx.html) on your rig. This Host OS has 90-day free trial.
 2. From another device remotely access WMware ESXi Web portal. Login with `root` as user name and password you used during installation of the Hypervisor in previous step.
 3. Enter `Maintenance mode`: _Navigator_ -> _Host_ -> _Actions_ -> _Enter maintenance mode_
 4. Set High performance power policy: _Navigator_ -> _Host_ -> _Manage_ -> _Hardware_ -> _Power Management_ -> _Change policy_ -> _High performance_
 5. Configure selected NVIDIA GeForce/TITAN video cards. Under _Navigator_ -> _Host_ -> _Manage_ -> _Hardware_ -> _PCI Devices_ find GeForce/TITAN video cards that you would like to use for mining. Select and click _Toggle passthrough_ so that _Passthrough_ for selected video card is **Active**. You may have some issues here (unable to set **Active** or message **Requires Reboot** appearing). If that is the case, under _Navigator_ -> _Host_ -> _Manage_ -> _System_ -> _Advanced settings_ find key `VMkernel.Boot.disableACSCheck` and set it to `true`. Reboot and you shall not have issues activating passthrough anymore.
+
 
 ### Guest OS preparation
 6. Get and install Windows 10 x64 as virtual machine in VMware ESXi. If you do not have Windows 10 x64, you can use 90-day free trial from [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/). If you are using your own Windows 10 installation, skip following steps and go directly to point 13.
@@ -47,6 +52,7 @@ We will shortly provide you with guides how to establish QuickMiner for various 
 13. In guest Windows OS [increase pagefile size](https://www.nicehash.com/blog/post/how-to-increase-virtual-memory-on-windows), set high performance profile and other tweaks to improve performance and stability.
 14. Install latest Windows updates and adjust update related settings.
 
+
 ### Guest OS configuration
 15. According to [this article](https://kb.vmware.com/s/article/2142307), add two **Configuration Parameters** to the virtual machine:
 > pciPassthru.use64bitMMIO TRUE
@@ -54,3 +60,9 @@ We will shortly provide you with guides how to establish QuickMiner for various 
 and
 
 > pciPassthru.64bitMMIOSizeGB 32
+
+16. Add selected video cards to the virtual machine by clicking on **Add other device**, choosing **PCI device** and then selecting appropriate video card in the combobox list.
+17. Configuration of virtual machine is complete. Additionally you may configure whether virtual machine is automatically started with the Host.
+
+
+### Driver installation and tweaks
