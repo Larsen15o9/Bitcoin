@@ -29,8 +29,11 @@ We will shortly provide you with guides how to establish QuickMiner for various 
 **WARNING: Incomplete instructions! Work in progress...**
 
 
-### BIOS preparation
-TODO
+### BIOS preparation - TODO
+* Enable IOMMU
+* Enable PCI Express Access Control Services (ACS)
+* More: https://kb.vmware.com/s/article/2142307
+
 
 ### Host OS preparation
 1. Install [Bare Metal Hypervisor: VMware ESXi](https://www.vmware.com/products/esxi-and-esx.html) on your rig. This Host OS has 90-day free trial.
