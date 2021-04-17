@@ -16,6 +16,7 @@ This wiki contains all the information you need and you might need in the future
 * Support for adjusting memory timings explained [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Memory-timings).
 * Fast start your mining Rig with QuickMiner - less than 1 hour to fully reliable optimized mining with [detailed step by step guide](https://github.com/nicehash/NiceHashQuickMiner/wiki/Mining-Rig-with-QuickMiner-in-one-hour).
 * **NEW!!!** Do you have Linux and you want to use QuickMiner? It is possible by making ["Virtual Miner"](https://github.com/nicehash/NiceHashQuickMiner/wiki/Virtual-Mining#linux--quickminer).
+* **NEW!!!** Improve stability of your mining rig [applying MSI](https://github.com/nicehash/NiceHashQuickMiner/wiki/MSI---Improve-stability-of-your-PC-Rig).
 
 When you want to know more, I suggest spending 10 minutes to read [something more about mining](https://github.com/nicehash/NiceHashQuickMiner/wiki/Hashing-speed,-accepted-rejected-speed-and-shares).
 
