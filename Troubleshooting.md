@@ -75,3 +75,7 @@ This error would appear if no data for OPTIMIZE is available. We may be constant
 
 ### Unable to deactivate Game Mode.
 This can happen if you update NVIDIA drivers during _Game Mode_ being activated. Please, make sure to turn off NiceHash QuickMiner before you update NVIDIA drivers. Unexpected behavior can happen if drivers are updated during mining because certain important handles/values can change and then completely break functionality of the software. If you do happen to update when NiceHash QuickMiner is running, then a simple reboot of your PC will solve the issue.
+
+
+### Warning #104
+Read about it [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/MSI---Improve-stability-of-your-PC-Rig).
