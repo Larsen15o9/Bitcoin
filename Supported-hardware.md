@@ -1,19 +1,19 @@
 Following video cards are officially tested and fully supported:
 Device Name | Possible best hashrate* | Possible best Efficiency* | Remarks
 -------|----------|------------|-----
-NVIDIA GeForce GTX 1060 6GB | 24 MH/s | - | Might modify memory timings
+NVIDIA GeForce GTX 1060 6GB | 25 MH/s | - | Might modify memory timings
 NVIDIA GeForce GTX 1070 | 29 MH/s | - | Might modify memory timings
 NVIDIA GeForce GTX 1070 Ti | 32 MH/s | - | Might modify memory timings
-NVIDIA GeForce GTX 1080 | 32 MH/s | - | FAW=16 & RRD=4 needed
-NVIDIA GeForce GTX 1080 Ti | 45 MH/s | - | FAW=16 & RRD=4 needed
-NVIDIA TITAN X (Pascal) | 45 MH/s | - | FAW=16 & RRD=4 needed
-NVIDIA TITAN Xp | 46 MH/s | - | FAW=16 & RRD=4 needed
+NVIDIA GeForce GTX 1080 | 35 MH/s | - | FAW=16 & RRD=4 needed
+NVIDIA GeForce GTX 1080 Ti | 48 MH/s | - | FAW=16 & RRD=4 needed
+NVIDIA TITAN X (Pascal) | 49 MH/s | - | FAW=16 & RRD=4 needed
+NVIDIA TITAN Xp | 49 MH/s | - | FAW=16 & RRD=4 needed
 NVIDIA TITAN V | 75 MH/s | 580 kH/J | - | Max clock 930, 125 W
-NVIDIA GeForce GTX 1660 | 25 MH/s | 530 kH/J | Max clock 1230, Mem +600, 25 MH/s @ 48 W
+NVIDIA GeForce GTX 1660 | 26 MH/s | 530 kH/J | Max clock 1230, Mem +600, 25 MH/s @ 48 W
 NVIDIA GeForce GTX 1660 Super | 32 MH/s | 410 kH/J | Set mem -505!
 NVIDIA GeForce GTX 1660 Ti | 32 MH/s | 475 kH/J | Mem +900, max clock 900
 NVIDIA GeForce RTX 2060 | 33 MH/s | 390 kH/J | Mem +900, max clock ~1050
-NVIDIA GeForce RTX 2060 Super | 43 MH/s | - | Mem +900, max clock ~1050
+NVIDIA GeForce RTX 2060 Super | 44 MH/s | - | Mem +900, max clock ~1050
 NVIDIA GeForce RTX 2070 | 44 MH/s | 410 kH/J | Mem +900, max clock ~1050
 NVIDIA GeForce RTX 2070 Super | 44 MH/s | 430 kH/J | Mem +900, max clock ~1050
 NVIDIA GeForce RTX 2080 | 44 MH/s | 410 kH/J | Mem +900, max clock ~1050
@@ -22,7 +22,7 @@ NVIDIA GeForce RTX 2080 Ti | 63 MH/s | 420 kH/J | Mem +1000, max clock ~1050
 NVIDIA TITAN RTX | 66 MH/s| 430 kH/J | Mem +1100, max clock ~1000
 NVIDIA GeForce RTX 3060 | 49 MH/s | 350 kH/J | Crippled by NVIDIA
 NVIDIA GeForce RTX 3060 Ti | 63 MH/s | 520 kH/J | 62-64 MH/s - depends on chip
-NVIDIA GeForce RTX 3070 | 63 MH/s | 525 kH/J | 62-64 MH/s - depends on chip
+NVIDIA GeForce RTX 3070 | 64 MH/s | 525 kH/J | 62-64 MH/s - depends on chip
 NVIDIA GeForce RTX 3080 | 101 MH/s | 460 kH/J | Keep GDDR6X cool for max eff.
 NVIDIA GeForce RTX 3090 | 126 MH/s | 425 kH/J | Keep GDDR6X cool for max eff.
 
