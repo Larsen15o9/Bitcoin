@@ -41,3 +41,7 @@ You will be informed whether **Game Mode** activation was successful or if there
 
 When you stop gaming, you can simply return back to full mining by doing the opposite and clicking `Game Mode -> Deactivate`.
 
+
+## 5. Misc
+If you would like to set fixed display GPU, set `"overrideDisplayDeviceUUID"` in your config file _nhqm.conf_. You can get UUID of your GPU by disabling it or applying certain optimization. Example of GPU UUID: `"GPU-3e1e7230-8f65-364d-0158-4f1d5e748397"`. Keep in mind that in some cases, a driver installation or upgrade can cause your GPU UUID to change.
+
