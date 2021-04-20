@@ -82,9 +82,9 @@ If you cannot reach speeds listed above, then consider [answer to the following 
 
 ## Is it possible to slightly modify OPTIMIZATION profiles?
 From version 0.4.3.0 this is possible. Steps are following:
-1. Download appropriate Optimization data file (currently this is [v5](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_005.json)) and save it somewhere on your hard drive. Let's assume location we save it into is `D:\nhqm\optimize\data_005.json`.
-2. In config file _nhqm.conf_ modify `"optimizeProfilesCustomDataURL" : null` to `"optimizeProfilesCustomDataURL" : "D:\\nhqm\\optimize\\data_005.json"`. Be aware of **the double backslashes** - if you use single, the whole config file gets corrupted and new one is generated. Here you can also use your own HTTPS URL to replace the GitHub's default one. If set to null, then default hardcoded URL is used which is regularly maintained by NiceHash team to offer best possible performance and reliability for most of the cards.
-3. Modify `D:\nhqm\optimize\data_005.json` file. From version 3, property names are much shortened, but are still the same as used in [version 2](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json). Some can be figured by looking at examples. `pt` (profile type) 1 has several extra properties:
+1. Download appropriate Optimization data file (currently this is [v6](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_006.json)) and save it somewhere on your hard drive. Let's assume location we save it into is `D:\nhqm\optimize\data_006.json`.
+2. In config file _nhqm.conf_ modify `"optimizeProfilesCustomDataURL" : null` to `"optimizeProfilesCustomDataURL" : "D:\\nhqm\\optimize\\data_006.json"`. Be aware of **the double backslashes** - if you use single, the whole config file gets corrupted and new one is generated. Here you can also use your own HTTPS URL to replace the GitHub's default one. If set to null, then default hardcoded URL is used which is regularly maintained by NiceHash team to offer best possible performance and reliability for most of the cards.
+3. Modify `D:\nhqm\optimize\data_006.json` file. From version 3, property names are much shortened, but are still the same as used in [version 2](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_002.json). Some can be figured by looking at examples. `pt` (profile type) 1 has several extra properties:
   * `dcc` is delta core clock,
   * `pl` is power limit in Watts and
   * `mt` is memory timings array.
