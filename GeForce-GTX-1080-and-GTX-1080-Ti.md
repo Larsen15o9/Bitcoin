@@ -14,7 +14,7 @@
 ![Optimize](https://github.com/nicehash/NiceHashQuickMiner/raw/main/images/optimize_button.png?raw=true)
 
 8. You can control each mining device - start or stop it and apply [mining optimization profiles](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations).
-9. Select optimization that you prefer. Boom! Your GeForce GTX 1080 or GTX 1080 Ti will suddenly hash much faster. **Up to 32 MH/s is expected for GeForce GTX 1080 and up to 45 MH/s for GeForce GTX 1080 Ti**, depending on optimization selected.
+9. Select optimization that you prefer. Boom! Your GeForce GTX 1080 or GTX 1080 Ti will suddenly hash much faster. **Up to 34 MH/s is expected for GeForce GTX 1080 and up to 48 MH/s for GeForce GTX 1080 Ti**, depending on optimization selected.
 10. Selected optimization is automatically saved and will be loaded next time you launch NiceHash QuickMiner. When you quit NiceHash QuickMiner, mining optimization is removed. You do not have to use any OC tools at all.
 
 ### Troubleshooting
