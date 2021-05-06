@@ -13,11 +13,12 @@ Device PCI ID | Device Name | Tested hashrate | Tested power consumption | Effic
 
 ## What to do regarding NVIDIA Tesla?
 - **Disable ECC** to improve efficiency and/or hashrate,
-- Can only change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency.
+- can only change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency.
 
 ## What to do regarding NVIDIA Quadro?
 - If having low amount of VRAM (5GB), disable WDDM and enable TCC using `nvidia-smi` (without monitor plugged in),
-- Can manage fan and change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency and optimize fan profile.
+- update to [Excavator Build 890](https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.5.1.6_RC/excavator_b890.zip) to fix 5GB memory limit bug,
+- can manage fan and change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency and optimize fan profile.
 
 ## Do you use Linux?
 No problem! Just [virtualize QuickMiner](https://github.com/nicehash/NiceHashQuickMiner/wiki/Virtual-Mining). One click solutions for virtual mining are coming soon!
