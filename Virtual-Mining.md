@@ -2,7 +2,7 @@
 
 NVIDIA has added support for GeForce series cards to be fully supported in virtualized environment using PCI-e pass-through method (no more code error 43). Support is available with the latest drivers [465.89](https://www.nvidia.com/download/driverResults.aspx/172060/en-us). We have spent some time and tested out various cards (Pascal, Turing, Ampere) and we can confirm that cryptomining in virtual environment now finally works. With some proper tweaking, the stability is good and speeds are identical to the ones possible to achieve native way. Because this is pass-through method, guest OS has complete control over GPU which means also complete access to tuning parameters such as clocks, voltages and memory timings.
 
-Following is an example of two virtual guest Windows 10 machines running QuickMiner, one having 3 cards and another one having 7 cards. All 10 cards are actually physically connected to the same rig. Host OS is **vmware ESXi**. We are confident this method will work with various Linux-Host virtualization scenarios.
+Following is an example of two virtual guest Windows 10 machines running QuickMiner, one having 3 cards and another one having 7 cards. All 10 cards are actually physically connected to the same rig. Host OS is **VMware ESXi**. We are confident this method will work with various Linux-Host virtualization scenarios.
 ![vmining](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/virtualmining.png?raw=true)
 
 ## What does this mean? How can it improve mining?
@@ -27,6 +27,10 @@ We will shortly provide you with guides how to establish QuickMiner for various 
 # Linux & QuickMiner
 
 **WARNING: Incomplete instructions! Work in progress...**
+
+### Prerequisites
+* Motherboard with support for VT-d or IOMMU
+* At least one GPU supported by QuickMiner
 
 
 ### BIOS preparation - TODO
