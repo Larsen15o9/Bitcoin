@@ -36,6 +36,7 @@ We will shortly provide you with guides how to establish QuickMiner for various 
 ### BIOS preparation - TODO
 * Enable VT-d (Intel) or IOMMU (AMD)
 * Enable PCI Express Access Control Services (ACS) - if available
+* Set PCIe gen to 2 or higher
 * More: https://kb.vmware.com/s/article/2142307
 
 
