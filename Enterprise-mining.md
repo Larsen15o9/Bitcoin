@@ -1,5 +1,9 @@
 ## NiceHash QuickMiner with support for NVIDIA Quadro series and Tesla series
 
+[Latest version of NiceHash QuickMiner](https://github.com/nicehash/NiceHashQuickMiner/releases) is bringing support for Enterprise class of NVIDIA video cards. For the first time in whole cryptocurrency mining history! If you have a powerful workstation or server full of Tesla cards. Now, when your power house is idle, you can **monetize idle time with just few clicks**, free of worries regarding security and safeness of shady miners. Read in general [why you should use QuickMiner and nothing else](https://github.com/nicehash/NiceHashQuickMiner/wiki/Why-NiceHash-QuickMiner) and what kind of [security mechanisms](https://github.com/nicehash/NiceHashQuickMiner/wiki/Security-Mechanisms) it uses **to keep you and your data safe**.
+
+We have tested and created special [one click optimization](https://github.com/nicehash/NiceHashQuickMiner/wiki/One-click-Optimizations) profile called **Enterprise** for the following cards (more are coming!):
+
 Device PCI ID | Device Name | Tested hashrate | Tested power consumption | Efficiency | Remarks
 ---|---|---|---|---|---
 20F1 | Tesla A100 | ~170 MH/s | ~200 W | 850 kH/J | Disable ECC for slightly better efficiency
