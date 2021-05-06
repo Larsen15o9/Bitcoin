@@ -8,9 +8,9 @@ Device PCI ID | Device Name | Tested hashrate | Tested power consumption | Effic
 1C31 | Quadro P2200 | ~20 MH/s | ~65 W | 300 kH/J | **Enable TCC** if getting memory issues
 
 ## What to do regarding NVIDIA Tesla?
-- Disable ECC to improve efficiency and/or hashrate,
-- Can only change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency
+- **Disable ECC** to improve efficiency and/or hashrate,
+- Can only change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency.
 
 ## What to do regarding NVIDIA Quadro?
-- If having low amount of VRAM (5GB), disable WDDM and enable TCC using `nvidia-smi` (without monitor plugged in)
-- Can manage fan and change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency and optimize fan profile
+- If having low amount of VRAM (5GB), disable WDDM and enable TCC using `nvidia-smi` (without monitor plugged in),
+- Can manage fan and change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency and optimize fan profile.
