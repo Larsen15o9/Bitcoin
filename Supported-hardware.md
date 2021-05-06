@@ -1,4 +1,4 @@
-Following video cards are officially tested and fully supported:
+Following video cards are officially tested and fully supported (GeForce series, for Quadro and Tesla series, check [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Enterprise-mining)):
 Device Name | Possible best hashrate* | Possible best Efficiency* | Remarks
 -------|----------|------------|-----
 NVIDIA GeForce GTX 1060 6GB | 25 MH/s | - | Might modify memory timings
