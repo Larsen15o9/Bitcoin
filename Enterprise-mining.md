@@ -4,7 +4,8 @@ Device PCI ID | Device Name | Tested hashrate | Tested power consumption | Effic
 ---|---|---|---|---|---
 20F1 | Tesla A100 | ~170 MH/s | ~200 W | 850 kH/J | Disable ECC for slightly better efficiency
 1EB8 | Tesla T4 | ~30 MH/s | ~65 W | 460 kH/J | Disable ECC for extra ~5 MH/s
-1EB1 | Quadro RTX 4000 | ~37 MH/s | ~83 W | 440 kH/J | WDDM -> TCC
+1EB1 | Quadro RTX 4000 | ~37 MH/s | ~83 W | 440 kH/J |
+1C31 | Quadro P2200 | ~20 MH/s | ~65 W | 300 kH/J | Enable TCC if getting out of memory issues
 
 ## What to do regarding NVIDIA Tesla?
 - Disable ECC to improve efficiency and/or hashrate,
