@@ -8,7 +8,7 @@ Device PCI ID | Device Name | Tested hashrate | Tested power consumption | Effic
 ---|---|---|---|---|---
 20F1 | Tesla A100 | ~170 MH/s | ~200 W | 850 kH/J | Disable ECC for slightly better efficiency
 1EB8 | Tesla T4 | ~30 MH/s | ~65 W | 460 kH/J | Disable ECC for extra ~5 MH/s
-1E30 | Quadro RTX 8000 | ~55 MH/s | ~150 W | 360 kH/J |
+1E30 | Quadro RTX 8000 | ~57 MH/s | ~160 W | 350 kH/J | Need TCC and P0 state
 1EB1 | Quadro RTX 4000 | ~37 MH/s | ~83 W | 440 kH/J |
 1C31 | Quadro P2200 | ~20 MH/s | ~65 W | 300 kH/J | **Enable TCC** if getting memory issues
 
@@ -19,7 +19,8 @@ Device PCI ID | Device Name | Tested hashrate | Tested power consumption | Effic
 ## What to do regarding NVIDIA Quadro?
 - If having low amount of VRAM (5GB), disable WDDM and enable TCC using `nvidia-smi` (without monitor plugged in),
 - update to [Excavator Build 890](https://github.com/nicehash/NiceHashQuickMiner/releases/download/v0.5.1.6_RC/excavator_b890.zip) to fix 5GB memory limit bug,
-- can manage fan and change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency and optimize fan profile.
+- can manage fan and change core clock limit - **Enterprise** optimization selects best settings to maximize efficiency and optimize fan profile,
+- try TCC with P0 state for CUDA workloads if possible (for now, set P0 for CUDA using [this useful tool](https://github.com/Orbmu2k/nvidiaProfileInspector)).
 
 ## Do you use Linux?
 No problem! Just [virtualize QuickMiner](https://github.com/nicehash/NiceHashQuickMiner/wiki/Virtual-Mining). One click solutions for virtual mining are coming soon!
