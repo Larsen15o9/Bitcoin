@@ -6,12 +6,13 @@ We have tested and created special [one click optimization](https://github.com/n
 
 Device PCI ID | Device Name | Tested hashrate | Tested power consumption | Efficiency | Remarks
 ---|---|---|---|---|---
-20F1 | Tesla A100 | ~170 MH/s | ~200 W | 850 kH/J | Disable ECC for slightly better efficiency
-1EB8 | Tesla T4 | ~30 MH/s | ~65 W | 460 kH/J | Disable ECC for extra ~5 MH/s
-1E30 | Quadro RTX 8000 | ~57 MH/s | ~160 W | 350 kH/J | Need TCC and P0 state
-1EB1 | Quadro RTX 4000 | ~37 MH/s | ~83 W | 440 kH/J |
-1C31 | Quadro P2200 | ~20 MH/s | ~65 W | 300 kH/J | **Enable TCC** if getting memory issues
-15F0 | Quadro GP100 | ~40 MH/s | ~150 W | 260 kH/J | **Enable TCC and P0 state**
+20F1 | Tesla A100 | ~170 MH/s | ~200 W | ~850 kH/J | Disable ECC for slightly better efficiency
+2235 | A40 | ~83 MH/s | ~190 W | ~430 kH/J | Disable ECC, enable TCC
+1EB8 | Tesla T4 | ~30 MH/s | ~65 W | ~460 kH/J | Disable ECC for extra ~5 MH/s
+1E30 | Quadro RTX 8000 | ~57 MH/s | ~160 W | ~350 kH/J | Need TCC and P0 state
+1EB1 | Quadro RTX 4000 | ~37 MH/s | ~83 W | ~440 kH/J |
+1C31 | Quadro P2200 | ~20 MH/s | ~65 W | ~300 kH/J | Enable TCC if getting memory issues
+15F0 | Quadro GP100 | ~40 MH/s | ~150 W | ~260 kH/J | Enable TCC and P0 state
 
 ## What to do regarding NVIDIA Tesla?
 - **Disable ECC** to improve efficiency and/or hashrate,
