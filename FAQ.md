@@ -54,7 +54,7 @@ Yes! When you have display connected to a GPU, there is some performance penalty
 - Turn off/disable unneeded applications that utilize GPU.
 - Reduce resolution and/or refresh rate.
 - Reduce number of displays.
-
+- [Turn on Hardware-accelerated GPU scheduling](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks#9-improve-mining-performance-with-windows-settings).
 
 
 
@@ -66,6 +66,8 @@ Consider following facts:
 * Is your card connected to the display? Resolution, refresh rate, number of monitors, activity on display, hardware acceleration (enabled/disabled)... are all the factors that affect your hashing speed. Excavator is made with mining set to low priority, so you can do various tasks on your PC and you do not notice any lag or jitter. If you want high speed on your primary video card then close all windows and just leave it be - you will see how hashing speed climbs up to the max. If you can afford it (you do not need high processing power for primary display output), you should switch display to be rendered by integrated GPU.
 
 * Your actual speed in Rig Manager may dance up and down - that is normal. Check accepted speed over longer period of time (6 hours or more) and it should average out to your speed reported by the video card. You can read more about this [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Hashing-speed,-accepted-rejected-speed-and-shares).
+
+**IMPORTANT** For possible solution/improvement [check this tip](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks#9-improve-mining-performance-with-windows-settings).
 
 
 ### <a name="faq09"></a> 9.  When I exit NiceHash QuickMiner, are my overclock and fan settings restored?
