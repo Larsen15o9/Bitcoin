@@ -89,3 +89,8 @@ We were notified by our users that if you are using same video card for mining a
 ![hwaccelschedule](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/desktop_performance.png?raw=true) 
 
 Open **Windows Settings**, then go to **Display** -> **Graphics settings** and turn on switch as visible in the picture above. Reboot and you should see significant improvement.
+
+
+### 10. Enable TCC driver mode if possible
+
+If you are using Tesla, Quadro or TITAN video cards for mining and that video card is not used for rendering display, you should enable TCC driver mode to improve performance and stability. You can do that using [nvidia-smi](https://docs.nvidia.com/gameworks/content/developertools/desktop/tesla_compute_cluster.htm). After you make a change, reboot is required.
