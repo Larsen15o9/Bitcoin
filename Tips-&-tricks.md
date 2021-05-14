@@ -80,3 +80,12 @@ When running more than 4 video cards, you will also have to set `Above 4G decodi
 ### 8. Enable automatic updates of RC versions
 
 If you would like to receive RC updates as soon as they are available, then in config file `nhqm.conf` flip the switch `"bUpdateRCVersion"` to `true`. If you decide to participate in testing of early new versions, please, submit all found bugs [here](https://github.com/nicehash/NiceHashQuickMiner/issues). Thank you!
+
+
+### 9. Improve mining performance with Windows settings
+
+We were notified by our users that if you are using same video card for mining and rendering desktop, you can significantly improve mining performance and rendering of the desktop by turning on **Hardware-accelerated GPU scheduling**.
+
+![hwaccelschedule](https://github.com/nicehash/NiceHashQuickMiner/blob/main/images/desktop_performance.png?raw=true) 
+
+Open **Windows Settings**, then go to **Display** -> **Graphics settings** and turn on switch as visible in the picture above. Reboot and you should see significant improvement.
