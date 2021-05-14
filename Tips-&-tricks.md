@@ -93,4 +93,4 @@ Open **Windows Settings**, then go to **Display** -> **Graphics settings** and t
 
 ### 10. Enable TCC driver mode if possible
 
-If you are using Tesla, Quadro or TITAN video cards for mining and that video card is not used for rendering display, you should enable TCC driver mode to improve performance and stability. You can do that using [nvidia-smi](https://docs.nvidia.com/gameworks/content/developertools/desktop/tesla_compute_cluster.htm). After you make a change, reboot is required.
+If you are using Tesla, Quadro or TITAN video cards for mining and that video card is not used for rendering display, you should enable TCC driver mode to improve performance and stability. You can do that using [nvidia-smi](https://docs.nvidia.com/gameworks/content/developertools/desktop/tesla_compute_cluster.htm). After you make a change, reboot is required. TCC enabled video card also does not need 4GB+ commitment of virtual memory, which reduces your need for setting large page file in Windows.
